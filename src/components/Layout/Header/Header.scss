@@ -1,0 +1,18 @@
+@import "../../../styles/global.scss";
+
+// Regulations
+// 1, Don't need to compile your Scss file, because node-sass automatically compile them.
+// 2, To avoid your class-name effect others section, please put your section name on the beginning of your class name, ex).yourSectionName__container
+// 3, Please use colours defined on src/styles/global.scss, ex) .youyourSectionName__container{background-colour:$orenge}
+
+.header {
+  height: 15rem;
+  background-color: $orange;
+  &__logo {
+    width: 10rem;
+  }
+  &__title {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
