@@ -1,9 +1,10 @@
 @import "../../../styles/global.scss";
 
 // Regulations
-// 1, Don't need to compile your Scss file, because node-sass automatically compile them.
-// 2, To avoid your class-name effect others section, please put your section name on the beginning of your class name, ex).yourSectionName__container
-// 3, Please use colours defined on src/styles/global.scss, ex) .youyourSectionName__container{background-colour:$orenge}
+// 1,Don't need to compile your Scss file, because node-sass automatically compile them.
+// 2,To avoid your class-name effect others section, please put your section name on the beginning of your class name, ex).yourSectionName__container. Ps boiler-plate follows BEM naming
+// 3,Please use style-valiable defined on src/styles/global.scss, ex) .youyourSectionName__container{background-colour:$orenge}
+// 4,Please use rem instead of px, that reasons is refered on this link why rem, how to use rem ex) font-size:2rem=>font-size:20px//16px * 62.5% * 2
 
 .header {
   height: 15rem;
