@@ -1,4 +1,4 @@
-@import "../../../styles/global.scss";
+@import "../../../styles/valiable";
 
 // Regulations
 // 1,Don't need to compile your Scss file, because node-sass automatically compile them.
@@ -9,6 +9,7 @@
 .about {
   background-color: $text;
   color: white;
+  font-family: $display;
   &__image {
     width: 10rem;
   }

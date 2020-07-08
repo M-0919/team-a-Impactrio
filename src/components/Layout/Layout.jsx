@@ -1,5 +1,5 @@
 import React from "react"
-import "../../styles/global.scss"
+import "./layout.scss"
 import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
 
@@ -17,10 +17,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="container-fluid">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <div className="layout">
+        <div className="container-fluid">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </div>
     </>
   )

@@ -1,22 +1,22 @@
 import React from "react"
+import Button from "react-bootstrap/Button"
 import "./elements.scss"
 
 export const StyledButton = ({ children, outline }) => {
+  console.log(outline)
+  const myButtonStyle = {
+    padding: "1rem",
+  }
   return (
-    <>
-      {outline === undefined || outline === false ? (
-        <button
-          className={`btn btn-custom-orange custom-button font-weight-bold btn-lg text-white`}
-        >
-          {children}
-        </button>
-      ) : (
-        <button
-          className={`btn btn-outline-custom-orange custom-button font-weight-bold btn-lg bg-white text-custom-orange`}
-        >
-          {children}
-        </button>
-      )}
-    </>
+    <Button
+      className={`font-weight-bold btn-lg ${
+        outline === undefined || outline === false
+          ? "btn-custom-orange  text-white"
+          : "btn-outline-custom-orange  bg-white text-custom-orange"
+      } `}
+      style={myButtonStyle}
+    >
+      {children}
+    </Button>
   )
 }
