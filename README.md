@@ -8,7 +8,7 @@ react-bootstrap, node-sass, gatsby
 
 ## Styling regulation
 
-1. Please follow [bootstrap document](https://getbootstrap.com/) and [react-bootstrap](https://react-bootstrap.github.io/).
+1. Please follow [bootstrap document](https://getbootstrap.com/) and [react-bootstrap document](https://react-bootstrap.github.io/).
 
 1. Don't need to compile your Scss file, because node-sass automatically compile them.
 
