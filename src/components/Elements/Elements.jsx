@@ -2,7 +2,6 @@ import React from "react"
 import "./elements.scss"
 
 export const StyledButton = ({ children, outline }) => {
-  console.log(outline)
   return (
     <>
       {outline === undefined || outline === false ? (
