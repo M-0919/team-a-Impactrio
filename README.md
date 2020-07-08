@@ -2,7 +2,13 @@
   Before you start coding
 </h1>
 
+## technologies
+
+Bootstrap, node-sass, gatsby
+
 ## Styling regulation
+
+1. Please follow [this document](https://getbootstrap.com/) to use Boostrap.
 
 1. Don't need to compile your Scss file, because node-sass automatically compile them.
 
@@ -10,13 +16,13 @@
    `ex).yourSectionName__container`. Ps boiler-plate follows [BEM naming](https://css-tricks.com/using-sass-control-scope-bem-naming/)
 
 1. Please use style-valiable defined on src/styles/global.scss,
-   ex) `.youyourSectionName__container{background-colour:$orenge}`
+   ex) `.yourSectionName__container{background-colour:$orenge}`, in case of Bootstrap ex) `text-custom-orange` => `color:#fa7921`
 
 1. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 
 ## What's inside?
 
-1. `src/styles/global.scss`: it is defined styling such as h1 h2 a etc.., not for individual components, so your components styling should be defined on `src/components/yourComponents/yourComponents.scss`
+1. `src/styles/global.scss`: it is defined styling such as h1 h2 a etc.., not for individual components, so your components styling should be defined on same directory.
 
 2. `src/images`: Images on lower of the folder are available in graphql queries (only jpg or png).
 
@@ -28,7 +34,7 @@
 
 1.  Import Image component from `src/components/image.jsx` into your section
 
-2.  Pass relative path to Image components ex) `<Image filename={"imagePath"} alt=""/>`, `src/images` => "", so if your path is `src/images/sample1.jpg`, that should be `sample1.jpg`
+2.  Pass relative path to Image components ex) `<Image filename={"imagePath"} alt=""/>`, `src/images` => "", so if your image path is `src/images/sample1.jpg`, that should be `sample1.jpg`
 
 ## 🎓 Learning Gatsby
 

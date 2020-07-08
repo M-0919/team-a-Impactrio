@@ -1,4 +1,4 @@
-@import "../../styles/global.scss";
+@import "../../../styles/global.scss";
 
 // Regulations
 // 1,Don't need to compile your Scss file, because node-sass automatically compile them.
@@ -8,7 +8,6 @@
 
 .stories {
   background-color: $lightOrange;
-  height: 15rem;
   &__image {
     width: 10rem;
   }

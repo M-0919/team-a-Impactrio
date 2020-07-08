@@ -1,4 +1,4 @@
-@import "../../styles/global.scss";
+@import "../../../styles/global.scss";
 
 // Regulations
 // 1,Don't need to compile your Scss file, because node-sass automatically compile them.
@@ -6,11 +6,14 @@
 // 3,Please use style-valiable defined on src/styles/global.scss, ex) .youyourSectionName__container{background-colour:$orenge}
 // 4,Please use rem instead of px, that reasons is refered on this link why rem, how to use rem ex) font-size:2rem=>font-size:20px//16px * 62.5% * 2
 
-.how {
-  background-color: $green;
-  height: 15rem;
+.about {
+  background-color: $text;
+  color: white;
   &__image {
     width: 10rem;
+  }
+  &__svg {
+    width: 20rem;
   }
   &__title {
     text-align: center;

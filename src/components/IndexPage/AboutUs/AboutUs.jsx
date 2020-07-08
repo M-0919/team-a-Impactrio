@@ -1,6 +1,8 @@
 import React from "react"
 import "./aboutUs.scss"
-import Image from "../Image"
+import Image from "../../Image"
+import { StyledButton } from "../../Elements/Elements"
+import { Link } from "gatsby"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const AboutUs = () => {
@@ -25,6 +27,10 @@ const AboutUs = () => {
         <img src="/sample3.svg" alt="sample3" />
       </div>
       <h2 className="about__title">AboutUs here</h2>
+
+      <Link to="/aboutUs">
+        <StyledButton>Link to About Us</StyledButton>
+      </Link>
     </div>
   )
 }
