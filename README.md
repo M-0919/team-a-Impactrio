@@ -2,27 +2,29 @@
   Before you start coding
 </h1>
 
-## technologies
+## Technologies
 
-Bootstrap, node-sass, gatsby
+react-bootstrap, node-sass, gatsby
 
 ## Styling regulation
 
-1. Please follow [this document](https://getbootstrap.com/) to use Boostrap.
+1. Please follow [bootstrap document] (https://getbootstrap.com/) [react-bootstrap] (https://react-bootstrap.github.io/).
 
 1. Don't need to compile your Scss file, because node-sass automatically compile them.
 
 1. To avoid your class-name effect others section, please put your section name on the beginning of your class name,
    `ex).yourSectionName__container`. Ps boiler-plate follows [BEM naming](https://css-tricks.com/using-sass-control-scope-bem-naming/)
 
-1. Please use style-valiable defined on src/styles/global.scss,
+1. Please use Scss valiables defined on src/styles/valiable.scss,
    ex) `.yourSectionName__container{background-colour:$orenge}`, in case of Bootstrap ex) `text-custom-orange` => `color:#fa7921`
 
 1. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 
+1. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
+
 ## What's inside?
 
-1. `src/styles/global.scss`: it is defined styling such as h1 h2 a etc.., not for individual components, so your components styling should be defined on same directory.
+1. `src/styles/global.scss`: it is defined styling such as h1 h2 a etc.., not for individual components, so your components stylesheet should be defined on same directory.
 
 2. `src/images`: Images on lower of the folder are available in graphql queries (only jpg or png).
 
