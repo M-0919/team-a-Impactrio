@@ -25,7 +25,7 @@ const Header = () => {
       <ul>
         <li>
           <Link to="/aboutUs">
-            <StyledButton text="About Us"></StyledButton>
+            <StyledButton>About Us</StyledButton>
           </Link>
         </li>
         <li>

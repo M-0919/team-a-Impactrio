@@ -1,4 +1,6 @@
-/* make the customizations for react-bootstrap */
+/* -------------------------------------------------------------------------- */
+/*                              CUSTOM BOOTSTRAP                              */
+/* -------------------------------------------------------------------------- */
 $theme-colors: (
   "custom-lightGreen": #e3fae0,
   "custom-lightOrange": #fff6ea,
@@ -12,27 +14,13 @@ $theme-colors: (
 /* -------------------------------------------------------------------------- */
 /*                               STYLE VALIABLE                               */
 /* -------------------------------------------------------------------------- */
-// color
-$ligthGreen: #e3fae0;
-$lightOrange: #fff6ea;
-$green: #65d258;
-$orange: #fa7921;
-$text: #13094e;
 
-// font-family
-$display: "Nunito Sans", sans-serif;
-$body: "Roboto", sans-serif;
-
-//font-weight
-$thin: 300;
-$normal: 400;
-
+@import "./valiable.scss";
 /* -------------------------------------------------------------------------- */
 /*                                GLOBAL STYLE                                */
 /* -------------------------------------------------------------------------- */
 html {
   font-size: 62.5%;
-
   color: $text;
 }
 
