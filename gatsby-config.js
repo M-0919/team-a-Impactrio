@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `CICCC`,
-    description: `This is a landing page`,
+    title: `Impactify`,
+    description: `A hybrid (online+ offline coaching) learning platform specialized in social innovation, sustainability, and soft skills.`,
     author: `CICCC`,
   },
   plugins: [

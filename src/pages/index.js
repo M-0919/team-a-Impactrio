@@ -1,17 +1,19 @@
 import React from "react"
 
 /* ------------------------------- COMPONENTS ------------------------------- */
-import Layout from "../components/Layout/Layout"
-import AboutUs from "../components/AboutUs/AboutUs"
-import HowItWorks from "../components/HowItWorks/HowItWorks"
-import SuccessStories from "../components/SuccessStories/SuccessStories"
+
+import SEO from "../components/seo"
+import AboutUs from "../components/IndexPage/AboutUs/AboutUs"
+import HowItWorks from "../components/IndexPage/HowItWorks/HowItWorks"
+import SuccessStories from "../components/IndexPage/SuccessStories/SuccessStories"
 
 const IndexPage = () => (
-  <Layout>
+  <>
+    <SEO title="Home" />
     <AboutUs />
     <HowItWorks />
     <SuccessStories />
-  </Layout>
+  </>
 )
 
 export default IndexPage
