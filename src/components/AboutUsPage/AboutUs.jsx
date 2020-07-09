@@ -1,6 +1,6 @@
 import React from "react"
 import "./aboutUs.scss"
-// import Image from "../Image"
+import Image from "../Image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
 // import { useStaticQuery, graphql } from "gatsby"
@@ -18,35 +18,64 @@ const AboutUs = () => {
   // `)
 
   return (
-    <div className="about">
-      {/* <div className="about__image">
-        <Image filename={"sample1.jpg"} alt="sample" />
-      </div>
+    <div className="aboutUs">
+      {/* 
 
       <div className="about__svg">
         <img src="/sample3.svg" alt="sample3" />
       </div> */}
-      <h2 className="about__title">About Us</h2>
-      <p className="about__text">
+      <h2 className="aboutUs__title">About Us</h2>
+      <p className="aboutUs__text">
         This is a platform that connects investors and entrepreneurs who drive
         social change. Our web application incorporates a framework, called
         Wheel for Change, which measures the social impact of your projects and
         helps you connect with potential investors.
       </p>
-      <p className="about__text">
+      <p className="aboutUs__text">
         Wheel for Change acts as a mentor who unlocks someone’s entrepreneurial
         and impact potential; a facilitator who finds common objectives among
         investors and entrepreneurs; an innovator who wants to create an impact
         in the community; and a communicator who conveys ideas clearly and
         simply.
       </p>
-      <h2 className="about__title">What We Do</h2>
-      <p className="about__text">
+      <h2 className="aboutUs__title">What We Do</h2>
+      <p className="aboutUs__text">
         We help people who are making societal changes through innovation. We
         give enterprises the opportunity to grow their concepts into drivers of
         change that benefits society and the environment.
       </p>
-
+      <div class="row">
+        <div class="col-sm aboutUs__wwd">
+          <div className="aboutUs__wwd__image">
+            <Image filename={"aboutUs_icon1.png"} alt="icon1" />
+          </div>
+          Embrace and drive change
+        </div>
+        <div class="col-sm aboutUs__wwd">
+          <div className="aboutUs__wwd__image">
+            <Image filename={"aboutUs_icon2.png"} alt="icon2" />
+          </div>
+          Pursue growth and learning
+        </div>
+        <div class="col-sm aboutUs__wwd">
+          <div className="aboutUs__wwd__image">
+            <Image filename={"aboutUs_icon3.png"} alt="icon3" />
+          </div>
+          Passionate and determined
+        </div>
+        <div class="col-sm aboutUs__wwd">
+          <div className="aboutUs__wwd__image">
+            <Image filename={"aboutUs_icon4.png"} alt="icon4" />
+          </div>
+          Build relationships
+        </div>
+        <div class="col-sm aboutUs__wwd">
+          <div className="aboutUs__wwd__image">
+            <Image filename={"aboutUs_icon5.png"} alt="icon5" />
+          </div>
+          Keep an open mind
+        </div>
+      </div>
       {/* <Link to="/aboutUs">
         <StyledButton>Link to About Us</StyledButton>
       </Link> */}

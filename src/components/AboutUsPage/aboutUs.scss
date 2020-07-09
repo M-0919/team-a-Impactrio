@@ -10,15 +10,12 @@
 // 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
-.about {
+.aboutUs {
   background-color: white;
   color: $text;
   font-family: "Nunito", sans-serif;
   text-align: center;
 
-  &__image {
-    width: 10rem;
-  }
   &__svg {
     width: 20rem;
   }
@@ -32,5 +29,14 @@
     font-weight: 400;
     line-height: 2.25rem;
     margin: 2rem auto;
+  }
+
+  &__wwd {
+    margin: 1rem auto;
+    text-align: center;
+
+    &__image {
+      max-width: 3em;
+    }
   }
 }
