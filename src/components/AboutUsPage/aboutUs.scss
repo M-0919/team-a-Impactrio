@@ -32,11 +32,11 @@
   }
 
   &__wwd {
-    margin: 1rem auto;
     text-align: center;
 
     &__image {
-      max-width: 3em;
+      margin: 0 auto;
+      max-width: 5em;
     }
   }
 }
