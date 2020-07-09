@@ -1,4 +1,4 @@
-@import "../../../styles/valiable";
+@import "../../../styles/valiable.scss";
 
 // Styling regulation
 // 1. Please follow [bootstrap document] (https://getbootstrap.com/) [react-bootstrap] (https://react-bootstrap.github.io/).
@@ -10,15 +10,10 @@
 // 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
-.about {
-  background-color: $text;
-  color: black;
-  font-family: $display;
+.subscribe {
+  background-color: rgb(214, 192, 150);
   &__image {
     width: 10rem;
-  }
-  &__svg {
-    width: 20rem;
   }
   &__title {
     text-align: center;

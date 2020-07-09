@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header__logo">
+      {/* <div className="header__logo">
         <Image filename={"logoA.png"} alt="logo" />
       </div>
       <ul>
@@ -38,8 +38,42 @@ const Header = () => {
             <StyledButton>Success Stories</StyledButton>
           </Link>
         </li>
-      </ul>
-      <h2 className="header__title">Header here</h2>
+      </ul> */}
+      {/* <h2 className="header__title">Header here</h2> */}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <Link to="/">
+          <div className="header__logo">
+            <Image filename={"logoA.png"} alt="logo" />
+          </div>
+        </Link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <Link class="nav-item nav-link" to="/">
+              Home
+            </Link>
+            <Link class="nav-item nav-link" to="/aboutUs">
+              About Us
+            </Link>
+            <Link class="nav-item nav-link" to="/howItWorks">
+              How It Works
+            </Link>
+            <Link class="nav-item nav-link" to="/successStories">
+              Success Stories
+            </Link>
+          </div>
+        </div>
+      </nav>
     </header>
   )
 }

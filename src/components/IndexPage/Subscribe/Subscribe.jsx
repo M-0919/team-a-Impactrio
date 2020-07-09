@@ -1,11 +1,11 @@
 import React from "react"
-import "./howItWorks.scss"
+import "./subscribe.scss"
 import Image from "../../Image"
 import { Link } from "gatsby"
 import { StyledButton } from "../../Elements/Elements"
 // import { useStaticQuery, graphql } from "gatsby"
 
-const HowItWorks = () => {
+const Subscribe = () => {
   // const data = useStaticQuery(graphql`
   //   query {
   //     site {
@@ -18,12 +18,12 @@ const HowItWorks = () => {
   // `)
 
   return (
-    <div className="how py-5">
+    <div className="subscribe py-5">
       {/* <div className="how__image">
         <Image filename={"sample2.jpg"} alt="sample" />
       </div>
       <p className="how__title">How It Works here</p>
-      <Link to="/howItWorks">
+      <Link to="/Subscribe">
         <StyledButton>Link to How It Works</StyledButton>
       </Link> */}
       <div className="d-flex justify-content-center">
@@ -60,7 +60,7 @@ const HowItWorks = () => {
       </div>
 
       <div className="text-center">
-        <Link to="/howItWorks" className="btn btn-outline-danger">
+        <Link to="/Subscribe" className="btn btn-outline-danger">
           Learn more
         </Link>
       </div>
@@ -68,4 +68,4 @@ const HowItWorks = () => {
   )
 }
 
-export default HowItWorks
+export default Subscribe
