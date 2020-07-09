@@ -10,7 +10,7 @@
 // 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
-.subscribe {
+.home__subscribe {
   background-color: rgb(214, 192, 150);
   &__image {
     width: 10rem;

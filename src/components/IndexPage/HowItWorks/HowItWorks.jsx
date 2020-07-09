@@ -18,7 +18,7 @@ const HowItWorks = () => {
   // `)
 
   return (
-    <div className="how py-5">
+    <div className="home__how py-5">
       {/* <div className="how__image">
         <Image filename={"sample2.jpg"} alt="sample" />
       </div>

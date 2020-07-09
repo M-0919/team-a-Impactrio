@@ -18,7 +18,7 @@ const Subscribe = () => {
   // `)
 
   return (
-    <div className="subscribe py-5">
+    <div className="home__subscribe py-5">
       {/* <div className="how__image">
         <Image filename={"sample2.jpg"} alt="sample" />
       </div>

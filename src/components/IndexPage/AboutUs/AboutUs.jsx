@@ -40,7 +40,7 @@ const AboutUs = () => {
     //     <StyledButton>Link to About Us</StyledButton>
     //   </Link>
     // </div>
-    <div className="about py-5" style={myStyle}>
+    <div className="home__about py-5" style={myStyle}>
       <div className="card ml-5" style={{ width: "18rem" }}>
         <div className="card-body">
           <h3 className="card-title">

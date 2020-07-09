@@ -18,7 +18,7 @@ const SuccessStories = () => {
   // `)
 
   return (
-    <div className="stories py-5">
+    <div className="home__stories py-5">
       {/* <div className="stories__image">
         <Image filename={"sample1.jpg"} />
       </div>
