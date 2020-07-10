@@ -28,39 +28,57 @@ const HowItWorks = () => {
       </Link> */}
       <div className="d-flex justify-content-center">
         <div class="card m-3" style={{ width: "18rem" }}>
-          <Image Image filename={"logoA.png"} class="card-img-top" alt="..." />
+          <Image
+            Image
+            filename={"homeSymbol1.jpg"}
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h2 class="card-title">Investors</h2>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Impactraction allows you to invest in social enterprises through a
+              few simple steps online. Our platform gives investors access to
+              impact driven investment opportunities.
             </p>
           </div>
         </div>
         <div class="card m-3" style={{ width: "18rem" }}>
-          <Image Image filename={"logoA.png"} class="card-img-top" alt="..." />
+          <Image
+            Image
+            filename={"homeSymbol2.jpg"}
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h2 class="card-title">How It Works</h2>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Impactraction helps you connect with social investors. We give
+              entrepreneurs and their projects support on raising funds, from
+              ideation to measuring their impact.
             </p>
           </div>
         </div>
         <div class="card m-3" style={{ width: "18rem" }}>
-          <Image Image filename={"logoA.png"} class="card-img-top" alt="..." />
+          <Image
+            Image
+            filename={"statistic.png"}
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h2 class="card-title">Entrepreneurs</h2>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Investors can select and invest on opportunities that supports
+              their cause by utilizing the platform and leveraging our extensive
+              investment projects and effective networking process.
             </p>
           </div>
         </div>
       </div>
 
       <div className="text-center">
-        <Link to="/howItWorks" className="btn btn-outline-danger">
+        <Link to="/howItWorks" className="btn home__how__button">
           Learn more
         </Link>
       </div>

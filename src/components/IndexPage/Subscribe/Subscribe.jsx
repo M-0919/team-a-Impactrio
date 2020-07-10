@@ -27,42 +27,27 @@ const Subscribe = () => {
         <StyledButton>Link to How It Works</StyledButton>
       </Link> */}
       <div className="d-flex justify-content-center">
-        <div class="card m-3" style={{ width: "18rem" }}>
-          <Image Image filename={"logoA.png"} class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+        <p className="col-4">
+          Subscribe to our monthly newsletter and stay up to date with all news
+          and updates.
+        </p>
+        <form class="form-inline">
+          <div class="form-group mb-2"></div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="inputEmail" class="sr-only">
+              Email
+            </label>
+            <input
+              type="email"
+              class="form-control pr-5"
+              id="inputEmail"
+              placeholder="Enter your email address"
+            />
           </div>
-        </div>
-        <div class="card m-3" style={{ width: "18rem" }}>
-          <Image Image filename={"logoA.png"} class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
-        <div class="card m-3" style={{ width: "18rem" }}>
-          <Image Image filename={"logoA.png"} class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-center">
-        <Link to="/Subscribe" className="btn btn-outline-danger">
-          Learn more
-        </Link>
+          <button type="submit" class="btn mb-2 home__subscribe__button">
+            Read more
+          </button>
+        </form>
       </div>
     </div>
   )
