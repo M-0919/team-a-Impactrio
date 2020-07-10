@@ -47,36 +47,85 @@ const AboutUs = () => {
         give enterprises the opportunity to grow their concepts into drivers of
         change that benefits society and the environment.
       </p>
-      <div class="row aboutUs__wwd">
-        <div class="col-sm aboutUs__wwd__item">
+      <div className="row aboutUs__wwd">
+        <div className="col-sm aboutUs__wwd__item">
           <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon1.png"} alt="icon1" />
           </div>
           Embrace and drive change
         </div>
-        <div class="col-sm aboutUs__wwd__item">
+        <div className="col-sm aboutUs__wwd__item">
           <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon2.png"} alt="icon2" />
           </div>
           Pursue growth and learning
         </div>
-        <div class="col-sm aboutUs__wwd__item">
+        <div className="col-sm aboutUs__wwd__item">
           <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon3.png"} alt="icon3" />
           </div>
           Passionate and determined
         </div>
-        <div class="col-sm aboutUs__wwd__item">
+        <div className="col-sm aboutUs__wwd__item">
           <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon4.png"} alt="icon4" />
           </div>
           Build relationships
         </div>
-        <div class="col-sm aboutUs__wwd__item">
+        <div className="col-sm aboutUs__wwd__item">
           <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon5.png"} alt="icon5" />
           </div>
           Keep an open mind
+        </div>
+      </div>
+      <div className="aboutUs__banner">
+        <Image filename={"aboutUs_banner2.jpg"} alt="banner2" />
+        <h2 className="aboutUs__banner__title">
+          We believe passionately in the power of ideas that create an impact in
+          the world
+        </h2>
+        <div className="row aboutUs__banner__stats">
+          <div className="col-sm aboutUs__banner__stats__item">
+            <h2 className="aboutUs__banner__stats__item__head">55</h2>
+            <p className="aboutUs__banner__stats__item__subhead">
+              social entrepreneurs mobilized
+            </p>
+          </div>
+          <div className="col-sm aboutUs__banner__stats__item">
+            <h2 className="aboutUs__banner__stats__item__head">60</h2>
+            <p className="aboutUs__banner__stats__item__subhead">
+              businesses funded
+            </p>
+          </div>
+          <div className="col-sm aboutUs__banner__stats__item">
+            <h2 className="aboutUs__banner__stats__item__head">118</h2>
+            <p className="aboutUs__banner__stats__item__subhead">
+              impact investors
+            </p>
+          </div>
+          <div className="col-sm aboutUs__banner__stats__item">
+            <h2 className="aboutUs__banner__stats__item__head">$31 million</h2>
+            <p className="aboutUs__banner__stats__item__subhead">
+              total funds collected
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 className="aboutUs__title">Our Team</h2>
+      <p className="aboutUs__text">
+        We bring a wealth of experience from social enterprise, start-ups,
+        organizations, and non-profit sectors. Meet the team who set our global
+        direction, goals and strategies.
+      </p>
+      <div className="row aboutUs__team">
+        <div className="col-sm aboutUs__team__member">
+          <div className="aboutUs__team__member__image">
+            <Image filename={"aboutUs_team1.jpeg"} alt="team1" />
+          </div>
+          <div className="aboutUs__team__member__label">
+            <span>Ashraful Hasan</span> | CEO
+          </div>
         </div>
       </div>
       {/* <Link to="/aboutUs">
