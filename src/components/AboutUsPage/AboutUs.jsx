@@ -24,6 +24,9 @@ const AboutUs = () => {
       <div className="about__svg">
         <img src="/sample3.svg" alt="sample3" />
       </div> */}
+      <div className="aboutUs__banner">
+        <Image filename={"aboutUs_banner1.jpg"} alt="banner1" />
+      </div>
       <h2 className="aboutUs__title">About Us</h2>
       <p className="aboutUs__text">
         This is a platform that connects investors and entrepreneurs who drive
@@ -44,33 +47,33 @@ const AboutUs = () => {
         give enterprises the opportunity to grow their concepts into drivers of
         change that benefits society and the environment.
       </p>
-      <div class="row">
-        <div class="col-sm aboutUs__wwd">
-          <div className="aboutUs__wwd__image">
+      <div class="row aboutUs__wwd">
+        <div class="col-sm aboutUs__wwd__item">
+          <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon1.png"} alt="icon1" />
           </div>
           Embrace and drive change
         </div>
-        <div class="col-sm aboutUs__wwd">
-          <div className="aboutUs__wwd__image">
+        <div class="col-sm aboutUs__wwd__item">
+          <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon2.png"} alt="icon2" />
           </div>
           Pursue growth and learning
         </div>
-        <div class="col-sm aboutUs__wwd">
-          <div className="aboutUs__wwd__image">
+        <div class="col-sm aboutUs__wwd__item">
+          <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon3.png"} alt="icon3" />
           </div>
           Passionate and determined
         </div>
-        <div class="col-sm aboutUs__wwd">
-          <div className="aboutUs__wwd__image">
+        <div class="col-sm aboutUs__wwd__item">
+          <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon4.png"} alt="icon4" />
           </div>
           Build relationships
         </div>
-        <div class="col-sm aboutUs__wwd">
-          <div className="aboutUs__wwd__image">
+        <div class="col-sm aboutUs__wwd__item">
+          <div className="aboutUs__wwd__item__icon">
             <Image filename={"aboutUs_icon5.png"} alt="icon5" />
           </div>
           Keep an open mind
