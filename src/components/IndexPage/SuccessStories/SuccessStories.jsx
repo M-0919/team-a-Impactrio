@@ -3,6 +3,7 @@ import "./successStories.scss"
 import Image from "../../Image"
 import { StyledButton } from "../../Elements/Elements"
 import { Link } from "gatsby"
+// import { Card } from "react-bootstrap"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
@@ -18,6 +19,7 @@ const SuccessStories = () => {
   // `)
 
   return (
+    <>
     <div className="stories">
       <div className="stories__image">
         <Image filename={"sample1.jpg"} />
@@ -27,6 +29,7 @@ const SuccessStories = () => {
         <StyledButton>Link to Success Stories</StyledButton>
       </Link>
     </div>
+    </>
   )
 }
 
