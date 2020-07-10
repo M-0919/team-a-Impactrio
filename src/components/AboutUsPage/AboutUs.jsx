@@ -124,7 +124,10 @@ const AboutUs = () => {
             <Image filename={"aboutUs_team1.jpeg"} alt="team1" />
           </div>
           <div className="aboutUs__team__member__label">
-            <span>Ashraful Hasan</span> | CEO
+            <span className="aboutUs__team__member__label__name">
+              Ashraful Hasan
+            </span>{" "}
+            | CEO
           </div>
         </div>
       </div>
