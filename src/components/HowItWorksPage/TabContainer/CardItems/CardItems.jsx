@@ -2,7 +2,7 @@ import React from "react"
 import "./cardItems.scss"
 import Card from "react-bootstrap/Card"
 import CardDeck from "react-bootstrap/CardDeck"
-export const CardItems = ({ array }) => {
+export const CardItems = ({ array, green }) => {
   const cards = array.map((item, index) => (
     <Card key={item.title}>
       <Card.Body>
@@ -14,7 +14,11 @@ export const CardItems = ({ array }) => {
           <span>{item.discription}</span>
         </Card.Text>
       </Card.Body>
-      <span className="how-tabs__card-items__number">{index + 1}</span>
+      <span
+        className={`how-tabs__card-items__number ${green && "bg-custom-green"}`}
+      >
+        {index + 1}
+      </span>
     </Card>
   ))
   return (
