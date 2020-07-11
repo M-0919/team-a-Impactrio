@@ -28,12 +28,7 @@ const HowItWorks = () => {
       </Link> */}
       <div className="d-flex justify-content-center">
         <div class="card m-3" style={{ width: "18rem" }}>
-          <Image
-            Image
-            filename={"homeSymbol1.jpg"}
-            class="card-img-top"
-            alt="..."
-          />
+          <Image Image filename={"growth.png"} class="card-img-top" alt="..." />
           <div class="card-body">
             <h2 class="card-title">Investors</h2>
             <p class="card-text">
@@ -46,7 +41,7 @@ const HowItWorks = () => {
         <div class="card m-3" style={{ width: "18rem" }}>
           <Image
             Image
-            filename={"homeSymbol2.jpg"}
+            filename={"project.png"}
             class="card-img-top"
             alt="..."
           />
@@ -62,7 +57,7 @@ const HowItWorks = () => {
         <div class="card m-3" style={{ width: "18rem" }}>
           <Image
             Image
-            filename={"statistic.png"}
+            filename={"bar-chart.png"}
             class="card-img-top"
             alt="..."
           />
