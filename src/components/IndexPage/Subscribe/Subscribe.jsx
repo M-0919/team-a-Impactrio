@@ -1,8 +1,6 @@
 import React from "react"
 import "./subscribe.scss"
-import Image from "../../Image"
-import { Link } from "gatsby"
-import { StyledButton } from "../../Elements/Elements"
+
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Subscribe = () => {
@@ -34,17 +32,18 @@ const Subscribe = () => {
         <form class="form-inline">
           <div class="form-group mb-2"></div>
           <div class="form-group mx-sm-3 mb-2">
-            <label for="inputEmail" class="sr-only">
+            <label htmlFor="inputEmail" className="sr-only">
               Email
             </label>
             <input
               type="email"
-              class="form-control pr-5"
+              aria-label="inputEmail"
+              className="form-control pr-5"
               id="inputEmail"
               placeholder="Enter your email address"
             />
           </div>
-          <button type="submit" class="btn mb-2 home__subscribe__button">
+          <button type="submit" className="btn mb-2 home__subscribe__button">
             Read more
           </button>
         </form>

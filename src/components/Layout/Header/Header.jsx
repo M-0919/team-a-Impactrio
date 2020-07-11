@@ -2,7 +2,6 @@ import React from "react"
 import "./Header.scss"
 import Image from "../../Image"
 import { Link } from "gatsby"
-import { StyledButton } from "../../Elements/Elements"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Header = () => {
