@@ -11,12 +11,21 @@
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
 .home__subscribe {
-  background-color: rgb(214, 192, 150);
+  background-color: $lightOrange;
   &__image {
     width: 10rem;
   }
   &__title {
     text-align: center;
     font-size: 5rem;
+  }
+  &__button {
+    background-color: $orange;
+    color: white;
+  }
+  &__button:hover {
+    color: $orange;
+    background-color: white;
+    border-color: $orange;
   }
 }

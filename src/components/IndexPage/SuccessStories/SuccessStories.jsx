@@ -44,7 +44,7 @@ const SuccessStories = () => {
       </div>
 
       <div className="text-center">
-        <Link to="/successStories" className="btn btn-outline-danger m-3">
+        <Link to="/successStories" className="btn home__stories__button m-3">
           See success stories
         </Link>
       </div>

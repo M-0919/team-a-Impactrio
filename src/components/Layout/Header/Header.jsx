@@ -58,17 +58,17 @@ const Header = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <Link class="nav-item nav-link" to="/">
+          <div class="navbar-nav ml-auto">
+            <Link class="nav-item nav-link m-2" to="/">
               Home
             </Link>
-            <Link class="nav-item nav-link" to="/aboutUs">
+            <Link class="nav-item nav-link m-2" to="/aboutUs">
               About Us
             </Link>
-            <Link class="nav-item nav-link" to="/howItWorks">
+            <Link class="nav-item nav-link m-2" to="/howItWorks">
               How It Works
             </Link>
-            <Link class="nav-item nav-link" to="/successStories">
+            <Link class="nav-item nav-link m-2" to="/successStories">
               Success Stories
             </Link>
           </div>

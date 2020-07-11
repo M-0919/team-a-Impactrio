@@ -11,12 +11,21 @@
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
 .home__stories {
-  background-color: $lightOrange;
+  background-color: $ligthGreen;
   &__image {
     width: 10rem;
   }
   &__title {
     text-align: center;
     font-size: 5rem;
+  }
+  &__button {
+    border-color: $orange;
+    color: $orange;
+    background-color: white;
+  }
+  &__button:hover {
+    color: white;
+    background-color: $orange;
   }
 }

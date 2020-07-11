@@ -47,7 +47,7 @@ const AboutUs = () => {
             Wheel for Change is a platform that connects investors and
             entrepreneurs who drive social change.
           </h3>
-          <Link href="/aboutUs" className="btn btn-outline-danger m-3">
+          <Link href="/aboutUs" className="btn home__about__button">
             Read more about what we do
           </Link>
         </div>
