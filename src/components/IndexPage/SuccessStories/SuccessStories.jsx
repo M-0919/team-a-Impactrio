@@ -2,6 +2,7 @@ import React from "react"
 import "./successStories.scss"
 import Image from "../../Image"
 import { Link } from "gatsby"
+// import { Card } from "react-bootstrap"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
@@ -19,6 +20,7 @@ const SuccessStories = () => {
   return (
     <div className="home__stories py-5">
       {/* <div className="stories__image">
+
         <Image filename={"sample1.jpg"} />
       </div>
       <p className="stories__title">Success stories here</p>
