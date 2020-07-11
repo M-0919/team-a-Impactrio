@@ -14,9 +14,7 @@ export const TabContainer = () => {
 
   return (
     <div className="how-tabs text-custom-text text-center text-display">
-      <h1 className="py-5 font-weight-bold">
-        See how our platform can help you network and manage your projects
-      </h1>
+      <h1 className="py-5 font-weight-bold">{config.title}</h1>
       <div>
         <Tabs
           id="controlled"
@@ -33,15 +31,10 @@ export const TabContainer = () => {
             <div className="how-tabs__card-box wrap">
               <div className="how-tabs__card-box__discription py-5 inner-wrap">
                 <h2 className="text-custom-text text-center font-weight-bold">
-                  We help you connect with investors and raise funds for your
-                  project
+                  {config.enterpreneurTabTitle}
                 </h2>
                 <p className="how-tabs__card-box__discription__text pt-3 ">
-                  We help you raise funds so that you can focus on creating a
-                  valuable impact in the community. We’re here to assist you in
-                  building a strong relationship with our network of investors
-                  interested in opportunities that deliver strong social
-                  returns.
+                  {config.enterpreneurTabDescription}
                 </p>
               </div>
               <CardItems array={config.enterpreneurCardData} />
@@ -49,15 +42,13 @@ export const TabContainer = () => {
             <div className="bg-white mb-5">
               <div className="inner-wrap">
                 <h2 className="text-custom-text text-center font-weight-bold py-5">
-                  What makes Wheel for Change a unique impact investing
-                  platform?
+                  {config.enterpreneurSubtitle}
                 </h2>
                 <Row1 object={config.enterpreneurRow1Data} />
                 <Row2 object={config.enterpreneurRow2Data} />
                 <div className="text-center how-tabs__footer">
                   <span className="text-custom-text text-center font-weight-bold mr-5">
-                    Share your innovative ideas and tackle social challenges
-                    with us.
+                    {config.enterpreneurButtonText}
                   </span>
                   <StyledButton>Sign Up</StyledButton>
                 </div>
@@ -73,29 +64,23 @@ export const TabContainer = () => {
             <div className="how-tabs__card-box wrap">
               <div className="how-tabs__card-box__discription py-5 inner-wrap">
                 <h2 className="text-custom-text text-center font-weight-bold">
-                  We help you choose the right investment that supports your
-                  cause.
+                  {config.inverstorTabTitle}
                 </h2>
                 <p className="how-tabs__card-box__discription__text pt-3 ">
-                  We curate local projects and investment opportunities in
-                  Canada to help you become part of an impactful project while
-                  building a diversified portfolio. We also support you in
-                  investing for a sustainable and resilient future by matching
-                  you with causes that you strongly believe in.
+                  {config.inverstorTabDescription}
                 </p>
               </div>
               <CardItems array={config.investorCardData} green={true} />
             </div>
             <div className="bg-white mb-5">
               <h2 className="text-custom-text text-center font-weight-bold py-5">
-                What makes Wheel for Change a unique impact investing platform?
+                {config.investorSubtitle}
               </h2>
               <Row1 object={config.investorRow1Data} />
               <Row2 object={config.investorRow2Data} />
               <div className="text-center how-tabs__footer">
                 <span className="text-custom-text text-center font-weight-bold mr-5">
-                  Are you ready to start investing in impact-driven projects for
-                  a sustainable world?
+                  {config.investorButtonText}
                 </span>
                 <StyledButton>Sign Up</StyledButton>
               </div>

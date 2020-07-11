@@ -1,4 +1,9 @@
 module.exports = {
+  title: "See how our platform can help you network and manage your projects",
+  enterpreneurTabTitle:
+    "We help you connect with investors and raise funds for your project",
+  enterpreneurTabDescription:
+    "We help you raise funds so that you can focus on creating a valuable impact in the community. We’re here to assist you in building a strong relationship with our network of investors interested in opportunities that deliver strong social returns.",
   enterpreneurCardData: [
     {
       title: "Create a project",
@@ -26,12 +31,18 @@ module.exports = {
     },
   ],
 
+  enterpreneurSubtitle:
+    "What makes Wheel for Change a unique impact investing platform?",
+
   enterpreneurRow1Data: {
     image: "how-row1-up.jpg",
     title: "Collaborate",
     discription:
       "Easily work with your team members in building a project profile by adding their email addresses.",
   },
+
+  enterpreneurButtonText:
+    " What makes Wheel for Change a unique impact investing platform?",
 
   enterpreneurRow2Data: {
     image: "how-row1-bottom.jpg",
@@ -42,6 +53,11 @@ module.exports = {
     discription2:
       "Focus on producing great ideas without worrying whether your data is safe and saved. Continue exactly where you left off and prevent accidental data loss with our auto-save function.",
   },
+
+  inverstorTabTitle:
+    "We help you choose the right investment that supports your cause.",
+  inverstorTabDescription:
+    "We curate local projects and investment opportunities in Canada to help you become part of an impactful project while building a diversified portfolio. We also support you in investing for a sustainable and resilient future by matching you with causes that you strongly believe in.",
 
   investorCardData: [
     {
@@ -70,6 +86,9 @@ module.exports = {
     },
   ],
 
+  investorSubtitle:
+    "What makes Wheel for Change a unique impact investing platform?",
+
   investorRow1Data: {
     image: "how-row2-up.jpg",
     title: "Compare",
@@ -83,4 +102,7 @@ module.exports = {
     discription:
       "Connect on a more personal level and discuss your interests through sending direct messages to social entrepreneurs.",
   },
+
+  investorButtonText:
+    "Are you ready to start investing in impact-driven projects for a sustainable world?",
 }
