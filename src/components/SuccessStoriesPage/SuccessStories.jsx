@@ -20,7 +20,7 @@ const SuccessStories = () => {
 
   return (
     <>
-      <div className="stories wrap">
+      <div className="stories wrap pt-5">
         <div className="stories__title">
           <h1>
             Stories from our drivers of change to inspire your own business
@@ -28,7 +28,7 @@ const SuccessStories = () => {
           </h1>
         </div>
         <div className="stories__subtitle">
-          <h4>
+          <h4 className="pb-5">
             Discover how enterprises and organizations have expanded their reach
             and gained more supporters with help from Impactraction.
           </h4>
