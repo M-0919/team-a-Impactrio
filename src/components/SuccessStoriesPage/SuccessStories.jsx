@@ -4,19 +4,29 @@ import Image from "../Image"
 import { StyledButton } from "../Elements/Elements"
 import { Link } from "gatsby"
 // import { Card } from "react-bootstrap"
-// import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
   // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
+  //   {
+  //     allContentfulSuccessStories(sort: { order: DESC }) {
+  //       edges {
+  //         node {
+  //           title
+  //           slug
+  //           id
+  //           text {
+  //             childMarkdownRemark {
+  //               excerpt(pruneLength: 488)
+  //             }
+  //           }
+  //         }
   //       }
   //     }
   //   }
   // `)
+
+  // console.log(data)
 
   return (
     <>
