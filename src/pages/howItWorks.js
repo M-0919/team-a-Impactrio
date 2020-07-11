@@ -1,16 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import Tabs from "../components/HowItWorksPage/Tabs/Tabs"
-import Row1 from "../components/HowItWorksPage/Row1/Row1"
-import Row2 from "../components/HowItWorksPage/Row2/Row2"
+import TabContainer from "../components/HowItWorksPage/TabContainer/TabContainer"
 
 const howItWorks = () => (
   <>
     <SEO title="How It Wroks" />
-    <Tabs />
-    <Row1 />
-    <Row2 />
+    <TabContainer />
     <Link to="/">Go back to the homepage</Link>
   </>
 )

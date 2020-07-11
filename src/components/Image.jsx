@@ -12,7 +12,7 @@ export default ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 800) {
+                sizes(maxWidth: 1600) {
                   ...GatsbyImageSharpSizes
                 }
               }
@@ -22,6 +22,7 @@ export default ({ filename, alt }) => (
       }
     `}
     render={data => {
+      console.log(data)
       const image = data.images.edges.find(n => {
         return n.node.relativePath.includes(filename)
       })
