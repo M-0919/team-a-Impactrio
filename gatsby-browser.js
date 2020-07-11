@@ -7,6 +7,7 @@
 // You can delete this file if you're not using it
 
 import React from "react"
+import "./src/styles/global.scss"
 import Layout from "./src/components/Layout/Layout"
 
 export const wrapPageElement = ({ element, props }) => {

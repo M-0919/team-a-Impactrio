@@ -29,8 +29,8 @@ export const TabContainer = () => {
             title="Enterpreneurs"
             className={`bg-custom-lightOrange`}
           >
-            <div className="how-tabs__card-box">
-              <div className="how-tabs__card-box__discription py-5">
+            <div className="how-tabs__card-box wrap">
+              <div className="how-tabs__card-box__discription py-5 inner-wrap">
                 <h2 className="text-custom-text text-center font-weight-bold">
                   We help you connect with investors and raise funds for your
                   project
@@ -46,17 +46,20 @@ export const TabContainer = () => {
               <CardItems array={enterpreneurCardData} />
             </div>
             <div className="bg-white mb-5">
-              <h2 className="text-custom-text text-center font-weight-bold py-5">
-                What makes Wheel for Change a unique impact investing platform?
-              </h2>
-              <Row1 object={enterpreneurRow1Data} />
-              <Row2 object={enterpreneurRow2Data} />
-              <div className="text-center how-tabs__footer">
-                <span className="text-custom-text text-center font-weight-bold mr-5">
-                  Share your innovative ideas and tackle social challenges with
-                  us.
-                </span>
-                <StyledButton>Sign Up</StyledButton>
+              <div className="inner-wrap">
+                <h2 className="text-custom-text text-center font-weight-bold py-5">
+                  What makes Wheel for Change a unique impact investing
+                  platform?
+                </h2>
+                <Row1 object={enterpreneurRow1Data} />
+                <Row2 object={enterpreneurRow2Data} />
+                <div className="text-center how-tabs__footer">
+                  <span className="text-custom-text text-center font-weight-bold mr-5">
+                    Share your innovative ideas and tackle social challenges
+                    with us.
+                  </span>
+                  <StyledButton>Sign Up</StyledButton>
+                </div>
               </div>
             </div>
           </Tab>
@@ -66,8 +69,8 @@ export const TabContainer = () => {
             title="Investors"
             className="bg-custom-lightGreen"
           >
-            <div className="how-tabs__card-box">
-              <div className="how-tabs__card-box__discription py-5">
+            <div className="how-tabs__card-box wrap">
+              <div className="how-tabs__card-box__discription py-5 inner-wrap">
                 <h2 className="text-custom-text text-center font-weight-bold">
                   We help you choose the right investment that supports your
                   cause.
@@ -177,14 +180,14 @@ const investorCardData = [
 ]
 
 const investorRow1Data = {
-  image: "how-row1-up.jpg",
+  image: "how-row2-up.jpg",
   title: "Compare",
   discription:
     "Considering multiple projects? Compare them so that you can make sure you’re making the right decision.",
 }
 
 const investorRow2Data = {
-  image: "how-row1-bottom.jpg",
+  image: "how-row2-bottom.jpg",
   title: "Network",
   discription:
     "Connect on a more personal level and discuss your interests through sending direct messages to social entrepreneurs.",

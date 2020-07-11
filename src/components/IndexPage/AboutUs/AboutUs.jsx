@@ -39,14 +39,14 @@ const AboutUs = () => {
     //     <StyledButton>Link to About Us</StyledButton>
     //   </Link>
     // </div>
-    <div className="home__about py-5" style={myStyle}>
+    <div className="home__about wrap py-5" style={myStyle}>
       <div className="card ml-5" style={{ width: "18rem" }}>
         <div className="card-body">
           <h3 className="card-title">
             Wheel for Change is a platform that connects investors and
             entrepreneurs who drive social change.
           </h3>
-          <Link href="/aboutUs" className="btn home__about__button">
+          <Link to="/aboutUs" className="btn home__about__button">
             Read more about what we do
           </Link>
         </div>

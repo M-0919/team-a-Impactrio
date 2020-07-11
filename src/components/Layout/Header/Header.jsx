@@ -17,7 +17,7 @@ const Header = () => {
   // `)
 
   return (
-    <header className="header">
+    <header className="header bg-light">
       {/* <div className="header__logo">
         <Image filename={"logoA.png"} alt="logo" />
       </div>
@@ -39,14 +39,14 @@ const Header = () => {
         </li>
       </ul> */}
       {/* <h2 className="header__title">Header here</h2> */}
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light wrap">
         <Link to="/">
           <div className="header__logo">
             <Image filename={"logoA.png"} alt="logo" />
           </div>
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
@@ -54,20 +54,20 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <Link class="nav-item nav-link m-2" to="/">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav ml-auto">
+            <Link className="nav-item nav-link m-2" to="/">
               Home
             </Link>
-            <Link class="nav-item nav-link m-2" to="/aboutUs">
+            <Link className="nav-item nav-link m-2" to="/aboutUs">
               About Us
             </Link>
-            <Link class="nav-item nav-link m-2" to="/howItWorks">
+            <Link className="nav-item nav-link m-2" to="/howItWorks">
               How It Works
             </Link>
-            <Link class="nav-item nav-link m-2" to="/successStories">
+            <Link className="nav-item nav-link m-2" to="/successStories">
               Success Stories
             </Link>
           </div>

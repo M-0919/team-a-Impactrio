@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button"
 import "./elements.scss"
 
 export const StyledButton = ({ children, outline }) => {
-  console.log(outline)
   const myButtonStyle = {
     padding: "1rem",
   }

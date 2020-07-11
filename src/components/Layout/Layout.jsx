@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="layout">
-        <div className="container-fluid">
+        <div>
           <Header />
           <main>{children}</main>
           <Footer />

@@ -22,7 +22,6 @@ export default ({ filename, alt }) => (
       }
     `}
     render={data => {
-      console.log(data)
       const image = data.images.edges.find(n => {
         return n.node.relativePath.includes(filename)
       })
