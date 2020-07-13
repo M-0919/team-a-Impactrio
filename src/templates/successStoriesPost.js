@@ -9,7 +9,6 @@ import styles from "./successStoriesPost.scss"
 
 class SuccessStoriesPostTemplate extends React.Component {
   render() {
-    console.log(this.props.data)
     const post = this.props.data.contentfulSuccessStories
 
     return (
