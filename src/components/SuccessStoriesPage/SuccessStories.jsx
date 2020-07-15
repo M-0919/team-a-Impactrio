@@ -4,7 +4,7 @@ import Image from "../Image"
 import { StyledButton } from "../Elements/Elements"
 import { Link } from "gatsby"
 // import { Card } from "react-bootstrap"
-// import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
   // const data = useStaticQuery(graphql`
@@ -26,10 +26,15 @@ const SuccessStories = () => {
   //   }
   // `)
 
-  // console.log(data)
+  // console.log(
+  //   JSON.stringify(data.allContentfulSuccessStories.edges[0].node.title)
+  // )
 
   return (
     <>
+      {/* {data.allContentfulSuccessStories.edges.map((story, index) => (
+        <p key={index}>Hello: {story.node.title}</p>
+      ))} */}
       <div className="stories wrap pt-5">
         <div className="stories__title">
           <h1>
