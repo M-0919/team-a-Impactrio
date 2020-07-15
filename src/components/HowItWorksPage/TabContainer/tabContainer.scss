@@ -60,4 +60,31 @@
   &__footer {
     padding-top: 6rem;
   }
+  @media (max-width: 768px) {
+    &__title {
+      width: 95%;
+      margin: 0 auto;
+      font-size: 2.4rem;
+    }
+    &__row-container {
+      padding-top: 3rem;
+    }
+    &__footer {
+      padding: 5rem 0 2rem 0;
+
+      &__button-text {
+        display: block;
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+      }
+    }
+    #controlled-tab-enterpreneurs {
+      width: 40%;
+      padding: 1rem 0;
+    }
+    #controlled-tab-investors {
+      width: 40%;
+      padding: 1rem 0;
+    }
+  }
 }

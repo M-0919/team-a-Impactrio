@@ -19,4 +19,12 @@
   &__description {
     font-family: $body;
   }
+  @media (max-width: 768px) {
+    &__image {
+      margin-top: 3rem;
+    }
+    &__text-box {
+      margin-top: 3rem;
+    }
+  }
 }

@@ -40,4 +40,26 @@
     color: white;
     font-size: 2rem;
   }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    .card-deck {
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: row wrap;
+      align-items: stretch;
+    }
+    .card-deck .card {
+      display: block;
+      flex-basis: 33.3%; /* change this value for each breakpoint*/
+    }
+  }
+  @media (max-width: 768px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @media (max-width: 575.98px) {
+    .card {
+      margin-left: 0;
+    }
+  }
 }
