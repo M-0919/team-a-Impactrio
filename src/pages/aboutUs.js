@@ -8,7 +8,7 @@ const aboutUs = () => (
   <>
     <SEO title="About Us" />
     <AboutUs />
-    <Link to="/">Go back to the homepage</Link>
+    {/* <Link to="/">Go back to the homepage</Link> */}
   </>
 )
 

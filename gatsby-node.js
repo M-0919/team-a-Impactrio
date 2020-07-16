@@ -25,6 +25,17 @@ exports.createPages = ({ graphql, actions }) => {
               title
             }
           }
+        },
+        {
+          allContentfulTeamMebers {
+            image {
+              fluid {
+                ...GatsbyContentfulFluid
+              }
+            }
+            name
+            position
+          }
         }
       }
     `

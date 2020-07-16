@@ -3,24 +3,28 @@ import "./aboutUs.scss"
 import Image from "../Image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
-// import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import BackgroundSection from "./aboutUs_banner2"
 
 const AboutUs = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    {
+      contentfulTeamMembers {
+        image {
+          fluid {
+            ...GatsbyContentfulFluid
+          }
+        }
+        name
+        position
+      }
+    }
+  `)
+  console.log(data)
 
   return (
     <div className="aboutUs">
       {/* 
-
       <div className="about__svg">
         <img src="/sample3.svg" alt="sample3" />
       </div> */}
@@ -54,71 +58,78 @@ const AboutUs = () => {
               <div className="aboutUs__wwd__item__icon">
                 <Image filename={"aboutUs_icon1.png"} alt="icon1" />
               </div>
-              Embrace and drive change
+              <p className="aboutUs__wwd__item__text">
+                Embrace and drive change
+              </p>
             </div>
             <div className="col-sm aboutUs__wwd__item">
               <div className="aboutUs__wwd__item__icon">
                 <Image filename={"aboutUs_icon2.png"} alt="icon2" />
               </div>
-              Pursue growth and learning
+              <p className="aboutUs__wwd__item__text">
+                Pursue growth and learning
+              </p>
             </div>
             <div className="col-sm aboutUs__wwd__item">
               <div className="aboutUs__wwd__item__icon">
                 <Image filename={"aboutUs_icon3.png"} alt="icon3" />
               </div>
-              Passionate and determined
+              <p className="aboutUs__wwd__item__text">
+                Passionate and determined
+              </p>
             </div>
             <div className="col-sm aboutUs__wwd__item">
               <div className="aboutUs__wwd__item__icon">
                 <Image filename={"aboutUs_icon4.png"} alt="icon4" />
               </div>
-              Build relationships
+              <p className="aboutUs__wwd__item__text">Build relationships</p>
             </div>
             <div className="col-sm aboutUs__wwd__item">
               <div className="aboutUs__wwd__item__icon">
                 <Image filename={"aboutUs_icon5.png"} alt="icon5" />
               </div>
-              Keep an open mind
+              <p className="aboutUs__wwd__item__text">Keep an open mind</p>
             </div>
           </div>
         </div>
       </div>
       <div className="aboutUs__banner">
-        <Image filename={"aboutUs_banner2.jpg"} alt="banner2" />
-        <div className="wrap">
-          <h2 className="aboutUs__banner__title">
-            We believe passionately in the power of ideas that create an impact
-            in the world
-          </h2>
-          <div className="row aboutUs__banner__stats">
-            <div className="col-sm aboutUs__banner__stats__item">
-              <h2 className="aboutUs__banner__stats__item__head">55</h2>
-              <p className="aboutUs__banner__stats__item__subhead">
-                social entrepreneurs mobilized
-              </p>
-            </div>
-            <div className="col-sm aboutUs__banner__stats__item">
-              <h2 className="aboutUs__banner__stats__item__head">60</h2>
-              <p className="aboutUs__banner__stats__item__subhead">
-                businesses funded
-              </p>
-            </div>
-            <div className="col-sm aboutUs__banner__stats__item">
-              <h2 className="aboutUs__banner__stats__item__head">118</h2>
-              <p className="aboutUs__banner__stats__item__subhead">
-                impact investors
-              </p>
-            </div>
-            <div className="col-sm aboutUs__banner__stats__item">
-              <h2 className="aboutUs__banner__stats__item__head">
-                $31 million
-              </h2>
-              <p className="aboutUs__banner__stats__item__subhead">
-                total funds collected
-              </p>
+        <BackgroundSection className="aboutUs__banner__bgc">
+          <div className="wrap">
+            <h2 className="aboutUs__banner__title">
+              We believe passionately in the power of ideas that create an
+              impact in the world
+            </h2>
+            <div className="row aboutUs__banner__stats">
+              <div className="col-sm aboutUs__banner__stats__item">
+                <h2 className="aboutUs__banner__stats__item__head">55</h2>
+                <p className="aboutUs__banner__stats__item__subhead">
+                  social entrepreneurs mobilized
+                </p>
+              </div>
+              <div className="col-sm aboutUs__banner__stats__item">
+                <h2 className="aboutUs__banner__stats__item__head">60</h2>
+                <p className="aboutUs__banner__stats__item__subhead">
+                  businesses funded
+                </p>
+              </div>
+              <div className="col-sm aboutUs__banner__stats__item">
+                <h2 className="aboutUs__banner__stats__item__head">118</h2>
+                <p className="aboutUs__banner__stats__item__subhead">
+                  impact investors
+                </p>
+              </div>
+              <div className="col-sm aboutUs__banner__stats__item">
+                <h2 className="aboutUs__banner__stats__item__head">
+                  $31 million
+                </h2>
+                <p className="aboutUs__banner__stats__item__subhead">
+                  total funds collected
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </BackgroundSection>
       </div>
       <div className="wrap">
         <div className="inner-wrap">
