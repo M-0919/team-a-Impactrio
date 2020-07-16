@@ -4,29 +4,35 @@ import Image from "../Image"
 import { StyledButton } from "../Elements/Elements"
 import { Link } from "gatsby"
 // import { Card } from "react-bootstrap"
-// import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     allContentfulSuccessStories(sort: { order: DESC }) {
-  //       edges {
-  //         node {
-  //           title
-  //           slug
-  //           id
-  //           text {
-  //             childMarkdownRemark {
-  //               excerpt(pruneLength: 488)
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // console.log(data)
+  const { allContentfulSuccessStories } = useStaticQuery(graphql`
+    {
+      allContentfulSuccessStories(
+        sort: { order: DESC, fields: createdAt }
+        limit: 3
+      ) {
+        edges {
+          node {
+            title
+            slug
+            id
+            text {
+              childMarkdownRemark {
+                excerpt(pruneLength: 688)
+              }
+            }
+            thumbnail {
+              fluid {
+                ...GatsbyContentfulFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <>
@@ -44,8 +50,29 @@ const SuccessStories = () => {
           </h4>
         </div>
         <div className="inner-wrap">
-          <div className="stories__card">
-            <div className="card mb-3" style={{ width: "100%" }}>
+          <div className="stories__card container-fluid">
+            <div class="row">
+              {allContentfulSuccessStories.edges.map(({ node }, index) => {
+                const { id, slug, text, thumbnail, title } = node
+                return index === 0 ? <p>12</p> : <p>6</p>
+              })}
+            </div>
+          </div>
+          <div className="stories__footer text-center">
+            <h2>
+              Share your innovative ideas and tackle social challenges with us.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default SuccessStories
+
+{
+  /* <div className="card mb-3" style={{ width: "100%" }}>
               <div className="row no-gutters">
                 <div className="col-md-5">
                   <div className="card-body">
@@ -66,7 +93,7 @@ const SuccessStories = () => {
                       scope and connected 250,000 unique users to more than
                       3,500 volunteer opportunities in 250 cities across Canada.
                     </p>
-                    {/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
+
                     <Link to="/">
                       <StyledButton>Read More</StyledButton>
                     </Link>
@@ -136,20 +163,5 @@ const SuccessStories = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="stories__footer text-center">
-            <h2>
-              Share your innovative ideas and tackle social challenges with us.
-            </h2>
-          </div>
-          {/* <Link to="/">
-        <StyledButton>Read More</StyledButton>
-      </Link> */}
-        </div>
-      </div>
-    </>
-  )
+            </div> */
 }
-
-export default SuccessStories
