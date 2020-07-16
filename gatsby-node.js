@@ -25,19 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
               title
             }
           }
-        },
-        {
-          allContentfulTeamMebers {
-            image {
-              fluid {
-                ...GatsbyContentfulFluid
-              }
-            }
-            name
-            position
-          }
         }
-      }
     `
   ).then(result => {
     if (result.errors) {
