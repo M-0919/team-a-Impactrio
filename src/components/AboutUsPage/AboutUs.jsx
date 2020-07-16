@@ -3,19 +3,24 @@ import "./aboutUs.scss"
 import Image from "../Image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
-// import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const AboutUs = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    {
+      contentfulTeamMembers {
+        image {
+          fluid {
+            ...GatsbyContentfulFluid
+          }
+        }
+        name
+        contentful_id
+      }
+    }
+  `)
+
+  console.log(data)
 
   return (
     <div className="aboutUs">
