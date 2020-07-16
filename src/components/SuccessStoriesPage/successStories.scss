@@ -44,7 +44,40 @@
     margin-bottom: 5rem;
     font-weight: 600;
   }
+  &__card__row1__image {
+    width: calc(7 / 12 * 100%);
+  }
+  &__card__row1__description {
+    width: calc(6 / 12 * 100%);
+    &__title {
+      font-family: $display;
+      font-size: 2rem;
+    }
+    &__excerpt {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 12;
+      -webkit-box-orient: vertical;
+    }
+  }
+  
+  &__card__row2__description {
+    &__title {
+      font-family: $display;
+      font-size: 2rem;
+    }
+    &__excerpt {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+    }
+  }
 }
+
+
 
 .card {
   margin-top: 3rem;
