@@ -1,22 +1,19 @@
 import React from "react"
 import "./aboutUs.scss"
 import Image from "../Image"
-// import Image from "gatsby-image"
+import Img from "gatsby-image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundSection from "./aboutUs_banner2"
+import { BackgroundSection } from "./aboutUs_banner2"
 
 const AboutUs = () => {
   const data = useStaticQuery(graphql`
     {
       contentfulTeamMembers {
         image {
-          fluid(maxWidth: 160) {
-            base64
-            tracedSVG
-            srcWebp
-            srcSetWebp
+          fluid(maxWidth: 120) {
+            ...GatsbyContentfulFluid
           }
         }
         name
@@ -24,19 +21,10 @@ const AboutUs = () => {
       }
     }
   `)
-  console.log(data)
 
   const teamMembers = data.contentfulTeamMembers
 
-  console.log(teamMembers)
-  // {
-  //   contentfulImpactStats {
-  //     socialEntrepreneursMobilized
-  //     businessesFunded
-  //     impactInvestors
-  //     totalFundsCollected
-  //   }
-  // }
+  // console.log(teamMembers, impactStats)
 
   return (
     <div className="aboutUs">
@@ -113,8 +101,7 @@ const AboutUs = () => {
         <BackgroundSection className="aboutUs__banner__bgc">
           <div className="wrap">
             <h2 className="aboutUs__banner__title">
-              We believe passionately in the power of ideas that create an
-              impact in the world
+              {/* <ImpactStats.title /> */}
             </h2>
             <div className="row aboutUs__banner__stats">
               <div className="col-sm aboutUs__banner__stats__item">
@@ -160,11 +147,7 @@ const AboutUs = () => {
         <div className="row aboutUs__team">
           <div className="col-sm-4 aboutUs__team__member">
             <div className="aboutUs__team__member__image">
-              <Image
-                fluid={teamMembers.image.fluid}
-                loading="auto"
-                alt="team1"
-              />
+              <Img fluid={teamMembers.image.fluid} loading="auto" alt="team1" />
             </div>
             <div className="aboutUs__team__member__label">
               <span className="aboutUs__team__member__label__name">
