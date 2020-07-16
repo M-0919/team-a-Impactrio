@@ -1,7 +1,7 @@
 import React from "react"
 import "./aboutUs.scss"
 import Image from "../Image"
-// import Image from "gatsby-image"
+import Img from "gatsby-image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
@@ -13,10 +13,7 @@ const AboutUs = () => {
       contentfulTeamMembers {
         image {
           fluid(maxWidth: 160) {
-            base64
-            tracedSVG
-            srcWebp
-            srcSetWebp
+            ...GatsbyContentfulFluid
           }
         }
         name
@@ -160,11 +157,7 @@ const AboutUs = () => {
         <div className="row aboutUs__team">
           <div className="col-sm-4 aboutUs__team__member">
             <div className="aboutUs__team__member__image">
-              <Image
-                fluid={teamMembers.image.fluid}
-                loading="auto"
-                alt="team1"
-              />
+              <Img fluid={teamMembers.image.fluid} loading="auto" alt="team1" />
             </div>
             <div className="aboutUs__team__member__label">
               <span className="aboutUs__team__member__label__name">
