@@ -5,19 +5,25 @@ import Img from "gatsby-image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import Banner1 from "./aboutUs_banner1"
 import Banner2 from "./aboutUs_banner2"
 
 const AboutUs = () => {
   const data = useStaticQuery(graphql`
     {
-      contentfulTeamMembers {
-        image {
-          fluid(maxWidth: 120) {
-            ...GatsbyContentfulFluid
+      allContentfulTeamMembers(sort: { fields: rank, order: ASC }) {
+        edges {
+          node {
+            image {
+              fluid(maxWidth: 120) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            name
+            position
+            rank
           }
         }
-        name
-        position
       }
       contentfulImpactStats {
         title
@@ -29,7 +35,7 @@ const AboutUs = () => {
     }
   `)
 
-  const teamMembers = data.contentfulTeamMembers
+  const teamMembers = data.allContentfulTeamMembers.edges
   const impactStats = data.contentfulImpactStats
 
   return (
@@ -39,7 +45,7 @@ const AboutUs = () => {
         <img src="/sample3.svg" alt="sample3" />
       </div> */}
       <div className="aboutUs__banner">
-        <Image filename={"aboutUs_banner1.jpg"} alt="banner1" />
+        <Banner1 className="aboutUs__banner__bgc1" />
       </div>
       <div className="wrap">
         <div className="inner-wrap">
@@ -57,6 +63,10 @@ const AboutUs = () => {
             to create an impact in the community; and a communicator who conveys
             ideas clearly and simply.
           </p>
+        </div>
+      </div>
+      <div className="wrap">
+        <div className="inner-wrap">
           <h2 className="aboutUs__title">What We Do</h2>
           <p className="aboutUs__text">
             We help people who are making societal changes through innovation.
@@ -104,7 +114,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="aboutUs__banner">
-        <Banner2 className="aboutUs__banner__bgc">
+        <Banner2 className="aboutUs__banner__bgc2">
           <div className="wrap">
             <h2 className="aboutUs__banner__title">
               We believe passionately in the power of ideas that create an
@@ -157,19 +167,39 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="row aboutUs__team">
-          <div className="col-sm-4 aboutUs__team__member">
-            <div className="aboutUs__team__member__image">
-              <Img fluid={teamMembers.image.fluid} loading="auto" alt="team1" />
+        {teamMembers.map(({ node }, index) => {
+          const { image, name, position } = node
+
+          return index === 0 ? (
+            <div className="row aboutUs__team">
+              <div className="col-sm-3 aboutUs__team__member">
+                <div className="aboutUs__team__member__image">
+                  <Img fluid={image.fluid} loading="auto" alt="team1" />
+                </div>
+                <div className="aboutUs__team__member__label">
+                  <span className="aboutUs__team__member__label__name">
+                    {name}
+                  </span>{" "}
+                  | {position}
+                </div>
+              </div>
             </div>
-            <div className="aboutUs__team__member__label">
-              <span className="aboutUs__team__member__label__name">
-                {teamMembers.name}
-              </span>{" "}
-              | {teamMembers.position}
+          ) : (
+            <div className="row aboutUs__team">
+              <div className="col-sm-3 aboutUs__team__member">
+                <div className="aboutUs__team__member__image">
+                  <Img fluid={image.fluid} loading="auto" alt="team1" />
+                </div>
+                <div className="aboutUs__team__member__label">
+                  <span className="aboutUs__team__member__label__name">
+                    {name}
+                  </span>{" "}
+                  | {position}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          )
+        })}
       </div>
       {/* <Link to="/aboutUs">
         <StyledButton>Link to About Us</StyledButton>
