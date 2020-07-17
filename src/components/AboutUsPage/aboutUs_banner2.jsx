@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-export const BackgroundSection = ({ className, children }) => (
+const Banner2 = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -27,18 +27,4 @@ export const BackgroundSection = ({ className, children }) => (
   />
 )
 
-// export const ImpactStats = () => {
-//   const data = useStaticQuery(graphql`
-//     {
-//       contentfulImpactStats {
-//         title
-//         socialEntrepreneursMobilized
-//         businessesFunded
-//         impactInvestors
-//         totalFundsCollected
-//       }
-//     }
-//   `)
-
-//   return data
-// }
+export default Banner2

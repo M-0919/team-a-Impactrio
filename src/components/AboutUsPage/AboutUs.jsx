@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 // import { StyledButton } from "../Elements/Elements"
 // import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import { BackgroundSection } from "./aboutUs_banner2"
+import Banner2 from "./aboutUs_banner2"
 
 const AboutUs = () => {
   const data = useStaticQuery(graphql`
@@ -19,12 +19,18 @@ const AboutUs = () => {
         name
         position
       }
+      contentfulImpactStats {
+        title
+        socialEntrepreneursMobilized
+        businessesFunded
+        impactInvestors
+        totalFundsCollected
+      }
     }
   `)
 
   const teamMembers = data.contentfulTeamMembers
-
-  // console.log(teamMembers, impactStats)
+  const impactStats = data.contentfulImpactStats
 
   return (
     <div className="aboutUs">
@@ -98,33 +104,40 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="aboutUs__banner">
-        <BackgroundSection className="aboutUs__banner__bgc">
+        <Banner2 className="aboutUs__banner__bgc">
           <div className="wrap">
             <h2 className="aboutUs__banner__title">
-              {/* <ImpactStats.title /> */}
+              We believe passionately in the power of ideas that create an
+              impact in the world
             </h2>
             <div className="row aboutUs__banner__stats">
               <div className="col-sm aboutUs__banner__stats__item">
-                <h2 className="aboutUs__banner__stats__item__head">55</h2>
+                <h2 className="aboutUs__banner__stats__item__head">
+                  {impactStats.socialEntrepreneursMobilized}
+                </h2>
                 <p className="aboutUs__banner__stats__item__subhead">
                   social entrepreneurs mobilized
                 </p>
               </div>
               <div className="col-sm aboutUs__banner__stats__item">
-                <h2 className="aboutUs__banner__stats__item__head">60</h2>
+                <h2 className="aboutUs__banner__stats__item__head">
+                  {impactStats.businessesFunded}
+                </h2>
                 <p className="aboutUs__banner__stats__item__subhead">
                   businesses funded
                 </p>
               </div>
               <div className="col-sm aboutUs__banner__stats__item">
-                <h2 className="aboutUs__banner__stats__item__head">118</h2>
+                <h2 className="aboutUs__banner__stats__item__head">
+                  {impactStats.impactInvestors}
+                </h2>
                 <p className="aboutUs__banner__stats__item__subhead">
                   impact investors
                 </p>
               </div>
               <div className="col-sm aboutUs__banner__stats__item">
                 <h2 className="aboutUs__banner__stats__item__head">
-                  $31 million
+                  ${impactStats.totalFundsCollected} million
                 </h2>
                 <p className="aboutUs__banner__stats__item__subhead">
                   total funds collected
@@ -132,7 +145,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </BackgroundSection>
+        </Banner2>
       </div>
       <div className="wrap">
         <div className="inner-wrap">
