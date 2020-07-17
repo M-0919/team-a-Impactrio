@@ -4,7 +4,7 @@ import Image from "../Image"
 import { StyledButton } from "../Elements/Elements"
 import { Link } from "gatsby"
 // import { Card } from "react-bootstrap"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
   // const data = useStaticQuery(graphql`

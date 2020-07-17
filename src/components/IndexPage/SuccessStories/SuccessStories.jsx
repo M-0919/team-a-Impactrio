@@ -50,7 +50,7 @@ const SuccessStories = () => {
 
   const info = data.allContentfulSuccessStories.edges
 
-  console.log(info[0].node)
+  // console.log(info[0].node)
 
   return (
     <div className="home__stories py-5 bg-custom-lightGreen">
@@ -68,20 +68,24 @@ const SuccessStories = () => {
         </h2>
 
         <div className="d-flex justify-content-center">
-          {info.map((story, index) => (
-            <div key={index} className="card m-3" style={{ width: "18rem" }}>
-              <Img
-                fluid={story.node.thumbnail.fluid}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h3 className="card-title">{story.node.title}</h3>
-                <h6>by {story.node.author}</h6>
-                <p className="card-text">{story.node.description}</p>
+          <div class="row">
+            {info.map((story, index) => (
+              <div key={index} class="col-sm-10 col-md-3">
+                <div className="card m-3">
+                  <Img
+                    fluid={story.node.thumbnail.fluid}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <div className="card-body">
+                    <h3 className="card-title">{story.node.title}</h3>
+                    <h6>by {story.node.author}</h6>
+                    <p className="card-text">{story.node.description}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="text-center">
