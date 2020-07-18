@@ -151,7 +151,7 @@ const AboutUs = () => {
             {teamMembers.map(({ node }, index) => {
               const { image, name, position } = node
               return (
-                <div className="col-sm-4" key={index}>
+                <div className="col-sm-3" key={index}>
                   <div className="img-thumbnail aboutUs__image">
                     <Img fluid={image.fluid} loading="auto" alt="team1" />
                   </div>

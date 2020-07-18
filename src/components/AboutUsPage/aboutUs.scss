@@ -11,7 +11,7 @@
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
 .aboutUs {
-  margin: 2rem 0 5rem 0;
+  margin: 2rem 0;
   background-color: white;
   color: $text;
   font-family: "Nunito", sans-serif;
@@ -40,6 +40,10 @@
     margin: 2rem 5rem;
   }
 
+  .col-sm-3 {
+    margin-bottom: 4rem;
+  }
+
   &__icon {
     max-width: 80%;
     margin: 0 auto;
@@ -48,6 +52,7 @@
   &__image {
     max-width: 100%;
     margin: 0 0 0 -1.5rem;
+    border: none;
   }
 
   &__label {
