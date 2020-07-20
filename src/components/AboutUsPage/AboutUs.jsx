@@ -67,33 +67,33 @@ const AboutUs = () => {
           give enterprises the opportunity to grow their concepts into drivers
           of change that benefits society and the environment.
         </p>
-        <div className="d-flex justify-content-center">
-          <div className="row justify-content-center">
-            <div className="col-sm-2">
+        <div className="d-flex wrap justify-content-center">
+          <div className="row wrap justify-content-center">
+            <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="img-thumbnail aboutUs__icon">
                 <Image filename={"aboutUs_icon1.png"} alt="icon1" />
               </div>
               <p className="h4">Embrace and drive change</p>
             </div>
-            <div className="col-sm-2">
+            <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="img-thumbnail aboutUs__icon">
                 <Image filename={"aboutUs_icon2.png"} alt="icon2" />
               </div>
               <p className="h4">Pursue growth and learning</p>
             </div>
-            <div className="col-sm-2">
+            <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="img-thumbnail aboutUs__icon">
                 <Image filename={"aboutUs_icon3.png"} alt="icon3" />
               </div>
               <p className="h4">Passionate and determined</p>
             </div>
-            <div className="col-sm-2">
+            <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="img-thumbnail aboutUs__icon">
                 <Image filename={"aboutUs_icon4.png"} alt="icon4" />
               </div>
               <p className="h4">Build relationships</p>
             </div>
-            <div className="col-sm-2">
+            <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="img-thumbnail aboutUs__icon">
                 <Image filename={"aboutUs_icon5.png"} alt="icon5" />
               </div>
@@ -103,33 +103,33 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="aboutUs__banner">
-        <Banner2 className="aboutUs__banner__bgc2">
+        <Banner2 className="d-flex aboutUs__banner__bgc2">
           <div className="wrap mx-auto">
-            <p className="h1 font-weight-bolder">
+            <p className="h1 font-weight-bolder wrap">
               We believe passionately in the power of ideas that create an
               impact in the world
             </p>
-            <div className="row">
-              <div className="col-sm">
-                <p className="display-3 font-weight-bolder">
+            <div className="row wrap justify-content-around ">
+              <div className="col-md-3 col-sm-6">
+                <p className="display-4 font-weight-bolder">
                   {impactStats.socialEntrepreneursMobilized}
                 </p>
                 <p className="h3">social entrepreneurs mobilized</p>
               </div>
-              <div className="col-sm">
-                <p className="display-3 font-weight-bolder">
+              <div className="col-md-3 col-sm-6">
+                <p className="display-4 font-weight-bolder">
                   {impactStats.businessesFunded}
                 </p>
                 <p className="h3">businesses funded</p>
               </div>
-              <div className="col-sm">
-                <p className="display-3 font-weight-bolder">
+              <div className="col-md-3 col-sm-6">
+                <p className="display-4 font-weight-bolder">
                   {impactStats.impactInvestors}
                 </p>
                 <p className="h3">impact investors</p>
               </div>
-              <div className="col-sm">
-                <p className="display-3 font-weight-bolder">
+              <div className="col-md-3 col-sm-6">
+                <p className="display-4 font-weight-bolder">
                   ${impactStats.totalFundsCollected} million
                 </p>
                 <p className="h3">total funds collected</p>
@@ -146,12 +146,12 @@ const AboutUs = () => {
           organizations, and non-profit sectors. Meet the team who set our
           global direction, goals and strategies.
         </p>
-        <div className="d-flex justify-content-center">
-          <div className="row">
+        <div className="d-flex wrap justify-content-center">
+          <div className="row justify-content-around">
             {teamMembers.map(({ node }, index) => {
               const { image, name, position } = node
               return (
-                <div className="col-sm-3" key={index}>
+                <div className="col-md-3 col-sm-6" key={index}>
                   <div className="img-thumbnail aboutUs__image">
                     <Img fluid={image.fluid} loading="auto" alt="team1" />
                   </div>
