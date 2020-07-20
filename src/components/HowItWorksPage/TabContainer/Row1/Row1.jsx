@@ -9,13 +9,17 @@ export const Row1 = ({ object }) => {
     <div className="how-row1">
       <Container>
         <Row className="justify-content-md-center">
-          <Col sm={6}>
+          <Col lg={6} md={12}>
             <div className="how-row1__image">
               <Image filename={object.image} alt="collaborate" />
             </div>
           </Col>
           <Col sm="auto" />
-          <Col sm={4} className="text-left d-flex align-items-center">
+          <Col
+            lg={4}
+            md={12}
+            className="text-left d-flex align-items-center how-row1__text-box"
+          >
             <div>
               <h2 className="text-custom-text font-weight-bold ">
                 {object.title}

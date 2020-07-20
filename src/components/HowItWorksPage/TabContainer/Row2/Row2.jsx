@@ -11,8 +11,9 @@ export const Row2 = ({ object }) => {
         <Row className="justify-content-md-center">
           {object.title2 ? (
             <Col
-              sm={4}
-              className="text-left d-flex flex-column justify-content-around"
+              lg={4}
+              md={12}
+              className="text-left d-flex flex-column justify-content-around how-row2__text-box"
             >
               <ul>
                 <li>
@@ -24,7 +25,7 @@ export const Row2 = ({ object }) => {
                   </p>
                 </li>
               </ul>
-              <ul>
+              <ul className="how-row2__list-2">
                 <li>
                   <h2 className="text-custom-text font-weight-bold ">
                     {object.title2}
@@ -36,7 +37,11 @@ export const Row2 = ({ object }) => {
               </ul>
             </Col>
           ) : (
-            <Col sm={4} className="text-left d-flex align-items-center">
+            <Col
+              lg={4}
+              md={12}
+              className="text-left d-flex align-items-center how-row2__text-box"
+            >
               <div>
                 <h2 className="text-custom-text font-weight-bold ">
                   {object.title}
@@ -49,7 +54,7 @@ export const Row2 = ({ object }) => {
           )}
 
           <Col sm="auto" />
-          <Col sm={6}>
+          <Col lg={6} md={12}>
             <div className="how-row2__image">
               <Image filename={object.image} alt="collaborate" />
             </div>
