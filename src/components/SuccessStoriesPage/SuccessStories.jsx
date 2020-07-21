@@ -7,11 +7,10 @@ import { Link } from "gatsby"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-
 const SuccessStories = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulSuccessStories(sort: {fields: createdAt, order: ASC }) {
+      allContentfulSuccessStories(sort: { fields: createdAt, order: ASC }) {
         edges {
           node {
             title
@@ -38,8 +37,8 @@ const SuccessStories = () => {
   //   JSON.stringify(data.allContentfulSuccessStories.edges[0].node.text));
 
   // console.log(data)
-  
-  const successPost = data.allContentfulSuccessStories.edges;
+
+  const successPost = data.allContentfulSuccessStories.edges
   return (
     <>
       <div className="stories wrap pt-5">
@@ -56,7 +55,7 @@ const SuccessStories = () => {
           </h4>
         </div>
         <div className="inner-wrap">
-        <div className="stories__card container-fluid">
+          <div className="stories__card container-fluid">
             <div className="row">
               {successPost.map(({ node }, index) => {
                 const { id, slug, text, thumbnail, title } = node
