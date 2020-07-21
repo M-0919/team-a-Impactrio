@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const SuccessStories = () => {
   const data = useStaticQuery(graphql`
     {
-      allContentfulSuccessStories(sort: {fields: createdAt, order: DESC }) {
+      allContentfulSuccessStories(sort: {fields: createdAt, order: ASC }) {
         edges {
           node {
             title

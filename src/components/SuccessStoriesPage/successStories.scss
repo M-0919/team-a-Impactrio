@@ -48,7 +48,7 @@
     width: calc(7 / 12 * 100%);
   }
   &__card__row1__description {
-    width: calc(6 / 12 * 100%);
+    width: calc(5 / 12 * 100%);
     &__title {
       font-family: $display;
       font-size: 2rem;
@@ -61,7 +61,6 @@
       -webkit-box-orient: vertical;
     }
   }
-  
   &__card__row2__description {
     &__title {
       font-family: $display;
@@ -77,9 +76,10 @@
   }
 }
 
-
-
-.card {
-  margin-top: 3rem;
-  margin-left: 1rem;
+.col-6 {
+  margin-bottom: 3rem;
 }
+// .card {
+//   margin-top: 3rem;
+//   margin-left: 1rem;
+// }
