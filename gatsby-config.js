@@ -14,6 +14,21 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Nunito`,
+            variants: [`300`, `400`, `800`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`300`, `400`, `700`],
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
     },
     {
