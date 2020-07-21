@@ -37,7 +37,6 @@ const Footer = () => {
             <Link to="/">Contact Us</Link>
           </div>
         </div>
-        {/* <p className="footer__title">footer here</p> */}
       </div>
     </footer>
   )

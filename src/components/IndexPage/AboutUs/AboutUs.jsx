@@ -25,20 +25,6 @@ const AboutUs = () => {
   }
 
   return (
-    // <div className="about">
-    //   <div className="about__image">
-    //     <Image filename={"sample1.jpg"} alt="sample" />
-    //   </div>
-
-    //   <div className="about__svg">
-    //     <img src="/sample3.svg" alt="sample3" />
-    //   </div>
-    //   <h2 className="about__title">AboutUs here</h2>
-
-    //   <Link to="/aboutUs">
-    //     <StyledButton>Link to About Us</StyledButton>
-    //   </Link>
-    // </div>
     <div className="home__about wrap py-5" style={myStyle}>
       <div className="card ml-5" style={{ width: "18rem" }}>
         <div className="card-body">
