@@ -2,6 +2,8 @@ import React from "react"
 import "./Header.scss"
 import Image from "../../Image"
 import { Link } from "gatsby"
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Header = () => {
