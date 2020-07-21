@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 // Styles
-import styles from "./successStoriesPost.scss"
+import stylesSuccess from "./successStoriesPost.module.scss"
 
 class SuccessStoriesPostTemplate extends React.Component {
   render() {
@@ -14,30 +14,34 @@ class SuccessStoriesPostTemplate extends React.Component {
     return (
       <>
         <SEO title={post.title} />
-        <h1>{post.title}</h1>
-        <p
-          style={{
-            display: `block`,
-          }}
-        >
-          {post.date}
-        </p>
-        <Img fluid={post.thumbnail.fluid} />
-        <div
-          className={styles.blogPostContent}
-          dangerouslySetInnerHTML={{
-            __html: post.text.childMarkdownRemark.html,
-          }}
-        />
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        />
+        <div className={stylesSuccess.container}>
+          <div className={stylesSuccess.title}>
+            <h1>{post.title}</h1>
+          </div>
+          <p
+            style={{
+              display: `block`,
+            }}
+          >
+            {post.date}
+          </p>
+          <Img fluid={post.thumbnail.fluid} />
+          <div
+            className={stylesSuccess.blogPostContent}
+            dangerouslySetInnerHTML={{
+              __html: post.text.childMarkdownRemark.html,
+            }}
+          />
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          />
+        </div>
       </>
     )
   }
@@ -62,6 +66,7 @@ export const pageQuery = graphql`
           ...GatsbyContentfulFluid
         }
       }
+      description
     }
   }
 `
