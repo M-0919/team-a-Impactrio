@@ -6,12 +6,6 @@
 
 // You can delete this file if you're not using it
 
-import React from "react"
-import "./src/styles/global.scss"
-import Layout from "./src/components/Layout/Layout"
+import CustomLayout from "./wrapPageElement"
 
-export const wrapPageElement = ({ element, props }) => {
-  // props provide same data to Layout as Page element will get
-  // including location, data, etc - you don't need to pass it
-  return <Layout {...props}>{element}</Layout>
-}
+export const wrapPageElement = CustomLayout
