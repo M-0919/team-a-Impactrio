@@ -49,6 +49,7 @@
       align-items: stretch;
     }
     .card-deck .card {
+      margin-top: 3rem;
       display: block;
       flex-basis: 33.3%; /* change this value for each breakpoint*/
     }
@@ -59,6 +60,7 @@
   }
   @media (max-width: 575.98px) {
     .card {
+      margin-top: 3rem;
       margin-left: 0;
     }
   }
