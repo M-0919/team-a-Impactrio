@@ -26,10 +26,15 @@ const SuccessStories = () => {
   //   }
   // `)
 
-  // console.log(data)
+  // console.log(
+  //   JSON.stringify(data.allContentfulSuccessStories.edges[0].node.title)
+  // )
 
   return (
     <>
+      {/* {data.allContentfulSuccessStories.edges.map((story, index) => (
+        <p key={index}>Hello: {story.node.title}</p>
+      ))} */}
       <div className="stories wrap pt-5">
         <div className="stories__title">
           <h1>

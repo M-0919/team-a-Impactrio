@@ -3,6 +3,8 @@ import "./Header.scss"
 import Image from "../../Image"
 import { Link } from "gatsby"
 // import { useStaticQuery, graphql } from "gatsby"
+import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar"
 
 const Header = () => {
   // const data = useStaticQuery(graphql`
@@ -39,7 +41,7 @@ const Header = () => {
         </li>
       </ul> */}
       {/* <h2 className="header__title">Header here</h2> */}
-      <nav className="navbar navbar-expand-lg navbar-light wrap">
+      {/* <nav className="navbar navbar-expand-lg navbar-light wrap">
         <Link to="/">
           <div className="header__logo">
             <Image filename={"logoA.png"} alt="logo" />
@@ -72,7 +74,31 @@ const Header = () => {
             </Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <Navbar collapseOnSelect expand="lg">
+        <Navbar.Brand href="#home">
+          <Link to="/">
+            <div className="header__logo">
+              <Image filename={"logoA.png"} alt="logo" />
+            </div>
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto"></Nav>
+          <Nav>
+            <Nav.Link eventKey={2}>
+              <Link to="/howItWorks">How It Works</Link>
+            </Nav.Link>
+            <Nav.Link eventKey={2}>
+              <Link to="/aboutUs">About Us</Link>
+            </Nav.Link>
+            <Nav.Link eventKey={2}>
+              <Link to="/successStories">Success Stories</Link>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </header>
   )
 }

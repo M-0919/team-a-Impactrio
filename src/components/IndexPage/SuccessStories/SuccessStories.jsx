@@ -1,9 +1,10 @@
 import React from "react"
 import "./successStories.scss"
-import Image from "../../Image"
+// import Image from "../../Image"
+import Img from "gatsby-image"
 import { Link } from "gatsby"
 // import { Card } from "react-bootstrap"
-// import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
   // const data = useStaticQuery(graphql`
@@ -16,6 +17,40 @@ const SuccessStories = () => {
   //     }
   //   }
   // `)
+
+  const data = useStaticQuery(graphql`
+    {
+      allContentfulSuccessStories(
+        limit: 4
+        sort: { fields: createdAt, order: DESC }
+      ) {
+        edges {
+          node {
+            id
+            title
+            slug
+            createdAt
+            author
+            text {
+              childMarkdownRemark {
+                html
+              }
+            }
+            thumbnail {
+              fluid {
+                ...GatsbyContentfulFluid
+              }
+            }
+            description
+          }
+        }
+      }
+    }
+  `)
+
+  const info = data.allContentfulSuccessStories.edges
+
+  // console.log(info[0].node)
 
   return (
     <div className="home__stories py-5 bg-custom-lightGreen">
@@ -33,20 +68,23 @@ const SuccessStories = () => {
         </h2>
 
         <div className="d-flex justify-content-center">
-          <div className="card m-3" style={{ width: "18rem" }}>
-            <Image
-              Image
-              filename={"logoA.png"}
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
+          <div class="row">
+            {info.map((story, index) => (
+              <div key={index} class="col-sm-10 col-md-3">
+                <div className="card m-3">
+                  <Img
+                    fluid={story.node.thumbnail.fluid}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <div className="card-body">
+                    <h3 className="card-title">{story.node.title}</h3>
+                    <h6>by {story.node.author}</h6>
+                    <p className="card-text">{story.node.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
