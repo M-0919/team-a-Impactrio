@@ -3,8 +3,6 @@ import "./Header.scss"
 import Image from "../../Image"
 import { Link } from "gatsby"
 // import { useStaticQuery, graphql } from "gatsby"
-import Nav from "react-bootstrap/Nav"
-import Navbar from "react-bootstrap/Navbar"
 
 const Header = () => {
   // const data = useStaticQuery(graphql`
@@ -66,6 +64,7 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+
     </header>
   )
 }

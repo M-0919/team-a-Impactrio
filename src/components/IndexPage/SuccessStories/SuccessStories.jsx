@@ -1,10 +1,9 @@
 import React from "react"
 import "./successStories.scss"
-// import Image from "../../Image"
-import Img from "gatsby-image"
+import Image from "../../Image"
 import { Link } from "gatsby"
 // import { Card } from "react-bootstrap"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 
 const SuccessStories = () => {
   // const data = useStaticQuery(graphql`
@@ -17,6 +16,7 @@ const SuccessStories = () => {
   //     }
   //   }
   // `)
+
 
   const data = useStaticQuery(graphql`
     {
@@ -50,6 +50,7 @@ const SuccessStories = () => {
 
   const info = data.allContentfulSuccessStories.edges
 
+
   return (
     <div className="home__stories py-5 bg-custom-lightGreen">
       <div className="wrap">
@@ -58,6 +59,7 @@ const SuccessStories = () => {
         </h2>
 
         <div className="d-flex justify-content-center">
+
           <div className="row">
             {info.map((story, index) => (
               <div key={index} className="col-sm-10 col-md-3">
@@ -75,6 +77,7 @@ const SuccessStories = () => {
                 </div>
               </div>
             ))}
+
           </div>
         </div>
 
