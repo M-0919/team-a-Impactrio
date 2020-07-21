@@ -18,16 +18,9 @@ const HowItWorks = () => {
 
   return (
     <div className="home__how py-5 wrap">
-      {/* <div className="how__image">
-        <Image filename={"sample2.jpg"} alt="sample" />
-      </div>
-      <p className="how__title">How It Works here</p>
-      <Link to="/howItWorks">
-        <StyledButton>Link to How It Works</StyledButton>
-      </Link> */}
       <div className="d-flex flex-wrap justify-content-center">
-        <div class="row">
-          <div class="col-sm-10 col-md-3">
+        <div className="row">
+          <div className="col-sm-10 col-md-3">
             <div className="card m-3" style={{ width: "18rem" }}>
               <Image
                 Image
@@ -47,8 +40,8 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-10 col-md-3">
+        <div className="row">
+          <div className="col-sm-10 col-md-3">
             <div className="card m-3" style={{ width: "18rem" }}>
               <Image
                 Image
@@ -68,8 +61,8 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-10 col-md-3">
+        <div className="row">
+          <div className="col-sm-10 col-md-3">
             <div className="card m-3" style={{ width: "18rem" }}>
               <Image
                 Image

@@ -18,13 +18,6 @@ const Subscribe = () => {
   return (
     <div className="home__subscribe py-5 bg-custom-lightOrange">
       <div className="wrap">
-        {/* <div className="how__image">
-        <Image filename={"sample2.jpg"} alt="sample" />
-      </div>
-      <p className="how__title">How It Works here</p>
-      <Link to="/Subscribe">
-        <StyledButton>Link to How It Works</StyledButton>
-      </Link> */}
         <div className="d-flex flex-wrap justify-content-center">
           <p className="col-md-4 col-sm-10">
             Subscribe to our monthly newsletter and stay up to date with all

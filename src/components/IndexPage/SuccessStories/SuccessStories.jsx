@@ -50,27 +50,17 @@ const SuccessStories = () => {
 
   const info = data.allContentfulSuccessStories.edges
 
-  // console.log(info[0].node)
-
   return (
     <div className="home__stories py-5 bg-custom-lightGreen">
       <div className="wrap">
-        {/* <div className="stories__image">
-
-        <Image filename={"sample1.jpg"} />
-      </div>
-      <p className="stories__title">Success stories here</p>
-      <Link to="/successStories">
-        <StyledButton>Link to Success Stories</StyledButton>
-      </Link> */}
         <h2 className="text-center">
           We help you find the right social investments.
         </h2>
 
         <div className="d-flex justify-content-center">
-          <div class="row">
+          <div className="row">
             {info.map((story, index) => (
-              <div key={index} class="col-sm-10 col-md-3">
+              <div key={index} className="col-sm-10 col-md-3">
                 <div className="card m-3">
                   <Img
                     fluid={story.node.thumbnail.fluid}
