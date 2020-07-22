@@ -24,6 +24,7 @@
     font-size: 1.7rem;
     font-weight: 600;
     margin-top: 1.5rem;
+    margin-bottom: -3rem;
   }
   &__card h3 {
     font-family: "Nunito", sans-serif;
@@ -44,42 +45,8 @@
     margin-bottom: 5rem;
     font-weight: 600;
   }
-  &__card__row1__image {
-    width: calc(7 / 12 * 100%);
-  }
-  &__card__row1__description {
-    width: calc(5 / 12 * 100%);
-    &__title {
-      font-family: $display;
-      font-size: 2rem;
-    }
-    &__excerpt {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 12;
-      -webkit-box-orient: vertical;
-    }
-  }
-  &__card__row2__description {
-    &__title {
-      font-family: $display;
-      font-size: 2rem;
-    }
-    &__excerpt {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 8;
-      -webkit-box-orient: vertical;
-    }
-  }
-  .col-6 {
-    margin-bottom: 3rem;
-  }
 }
 
-// .card {
-//   margin-top: 3rem;
-//   margin-left: 1rem;
-// }
+.card {
+  margin-top: 3rem;
+}
