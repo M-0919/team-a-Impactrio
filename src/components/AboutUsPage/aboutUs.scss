@@ -11,7 +11,10 @@
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
 .aboutUs {
-  margin: 2rem 0;
+  .inner-wrap {
+    width: 90%;
+  }
+
   background-color: white;
   color: $text;
   font-family: "Nunito", sans-serif;
@@ -21,6 +24,13 @@
     max-width: 100vw !important;
     // margin: 0 auto;
     text-align: center;
+
+    &__item {
+      padding: 0 3rem;
+      @media (max-width: 768px) {
+        padding: 1rem 2rem;
+      }
+    }
 
     &__bgc1 {
       padding: 12rem 0;
@@ -36,19 +46,14 @@
     }
   }
 
-  .wrap {
-    margin: 2rem 6rem;
-  }
-
   &__icon {
-    max-width: 90%;
+    width: 60%;
     margin: 0 auto;
   }
 
   &__image {
     max-width: 100%;
-    border: 0;
-    padding: 0;
+    border-radius: 0.5rem;
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15);
@@ -61,7 +66,7 @@
     line-height: 1.35rem;
     background-color: $orange;
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     padding: 0.65rem;
     margin: -1.25rem -1.5rem 2rem 2.5rem;
     position: relative;
@@ -70,6 +75,25 @@
     &__name {
       font-size: 1.25rem;
       font-weight: 700;
+    }
+  }
+
+  &__members {
+    @media (max-width: 576px) {
+      .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 1rem 0 1rem;
+      }
+    }
+  }
+  &__icons {
+    @media (max-width: 576px) {
+      .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 1rem 0 1rem;
+      }
     }
   }
 }

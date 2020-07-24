@@ -78,7 +78,7 @@ export const TabContainer = () => {
               </h2>
               <Row1 object={config.investorRow1Data} />
               <Row2 object={config.investorRow2Data} />
-              <div className="text-center how-tabs__footer">
+              <div className="text-center how-tabs__footer inner-wrap">
                 <span className="text-custom-text text-center font-weight-bold mr-5 how-tabs__footer__button-text">
                   {config.investorButtonText}
                 </span>
