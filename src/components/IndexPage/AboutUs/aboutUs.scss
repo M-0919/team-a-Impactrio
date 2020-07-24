@@ -10,27 +10,32 @@
 // 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
+.home__about__hero {
+  background-position: top 15% left 50%;
+}
 .home__about {
-  background-color: $text;
-  color: black;
+  color: $text;
   font-family: $display;
-  &__image {
-    width: 10rem;
+
+  &__description {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.7);
   }
-  &__svg {
-    width: 20rem;
+
+  @media (max-width: 1024px) {
+    width: 95%;
+    &__description {
+      width: 30%;
+    }
   }
-  &__title {
-    text-align: center;
-    font-size: 5rem;
+  @media (max-width: 768px) {
+    &__description {
+      width: 50%;
+    }
   }
-  &__button {
-    border-color: $orange;
-    color: $orange;
-    background-color: white;
-  }
-  &__button:hover {
-    color: white;
-    background-color: $orange;
+  @media (max-width: 576px) {
+    &__description {
+      width: 100%;
+    }
   }
 }

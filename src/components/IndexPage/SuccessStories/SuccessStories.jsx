@@ -1,23 +1,12 @@
 import React from "react"
 import "./successStories.scss"
-// import Image from "../../Image"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-// import { Card } from "react-bootstrap"
 import { useStaticQuery, graphql } from "gatsby"
+import Card from "react-bootstrap/Card"
+import { StyledButton } from "../../Elements/Elements"
 
 const SuccessStories = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
   const data = useStaticQuery(graphql`
     {
       allContentfulSuccessStories(
@@ -33,7 +22,7 @@ const SuccessStories = () => {
             author
             text {
               childMarkdownRemark {
-                html
+                excerpt(pruneLength: 138)
               }
             }
             thumbnail {
@@ -41,7 +30,6 @@ const SuccessStories = () => {
                 ...GatsbyContentfulFluid
               }
             }
-            description
           }
         }
       }
@@ -51,36 +39,44 @@ const SuccessStories = () => {
   const info = data.allContentfulSuccessStories.edges
 
   return (
-    <div className="home__stories py-5 bg-custom-lightGreen">
+    <div className="home__stories bg-custom-lightGreen pb-3">
       <div className="wrap">
-        <h2 className="text-center">
+        <h2 className="text-center py-5 font-weight-bold home__stories__title">
           We help you find the right social investments.
         </h2>
 
-        <div className="d-flex justify-content-center">
-          <div className="row">
-            {info.map((story, index) => (
-              <div key={index} className="col-sm-10 col-md-3">
-                <div className="card m-3">
-                  <Img
-                    fluid={story.node.thumbnail.fluid}
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h3 className="card-title">{story.node.title}</h3>
-                    <h6>by {story.node.author}</h6>
-                    <p className="card-text">{story.node.description}</p>
-                  </div>
-                </div>
+        <div className="home__stories__card-items">
+          <div className="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+            {info.map(({ node }) => (
+              <div className="col" key={node.id}>
+                <Card key={node.id}>
+                  <Link to={`/successStories/${node.slug}`}>
+                    <Img
+                      fluid={node.thumbnail.fluid}
+                      className="home__stories__card-items__image"
+                      alt="..."
+                    />
+                    <Card.Body>
+                      <h3 className="home__stories__card-items__title font-weight-bold">
+                        {node.title}
+                      </h3>
+                      <div className="home__stories__card-items__discription">
+                        <p>by {node.author}</p>
+                        <p className="mt-3">
+                          {node.text.childMarkdownRemark.excerpt}
+                        </p>
+                      </div>
+                    </Card.Body>
+                  </Link>
+                </Card>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="text-center">
-          <Link to="/successStories" className="btn home__stories__button m-3">
-            See success stories
+        <div className="text-center py-5">
+          <Link to="/successStories">
+            <StyledButton outline={true}>See success stories</StyledButton>
           </Link>
         </div>
       </div>

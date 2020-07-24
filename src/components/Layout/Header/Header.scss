@@ -8,11 +8,24 @@
 
 .header {
   background-color: white;
+
   &__logo {
     width: 10rem;
   }
   &__title {
     font-size: 5rem;
     text-align: center;
+  }
+  &__nav-link {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__nav-link-isActive {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8) !important;
+    border-bottom: 1px $orange solid;
   }
 }

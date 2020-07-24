@@ -3,23 +3,12 @@ import "./layout.scss"
 import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
+const Layout = ({ children, path }) => {
   return (
     <>
       <div className="layout">
         <div>
-          <Header />
+          <Header path={path} />
           <main>{children}</main>
           <Footer />
         </div>

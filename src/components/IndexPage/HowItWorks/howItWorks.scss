@@ -12,6 +12,10 @@
 
 .home__how {
   background-color: white;
+  &__container {
+    width: 95%;
+    margin: 0 auto;
+  }
   &__image {
     width: 10rem;
   }
@@ -27,5 +31,31 @@
   &__button:hover {
     color: white;
     background-color: $orange;
+  }
+  &__column {
+    @media (max-width: 768px) {
+      margin-top: 4rem;
+    }
+    @media (max-width: 576px) {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &__image {
+      width: 30%;
+      margin: 0 auto;
+    }
+    &__description {
+      text-align: center;
+    }
+    &__title {
+      font-weight: bold;
+      color: $text;
+      font-family: $display;
+    }
+    &__text {
+      color: $text;
+      font-size: 1.2rem;
+    }
   }
 }

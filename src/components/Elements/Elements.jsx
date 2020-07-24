@@ -4,7 +4,8 @@ import "./elements.scss"
 
 export const StyledButton = ({ children, outline }) => {
   const myButtonStyle = {
-    padding: "1rem",
+    padding: "0.5rem 1rem",
+    fontSize: "1.2rem",
   }
   return (
     <Button

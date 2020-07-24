@@ -11,20 +11,55 @@
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
 .home__stories {
-  &__image {
-    width: 10rem;
+  color: $text;
+  font-family: $body;
+  &__card-items {
+    @media (max-width: 1024px) {
+      width: 95%;
+      margin: 0 auto;
+    }
+    @media (max-width: 992px) {
+      .col {
+        margin-top: 3rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .card {
+        margin: 0;
+      }
+
+      .col:nth-child(1) {
+        margin-top: 0;
+      }
+      .col:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 576px) {
+      .row {
+        display: block;
+      }
+
+      .col:nth-child(2) {
+        margin-top: 3rem;
+      }
+    }
+
+    &__image {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      height: 16.7rem;
+    }
+    &__title {
+      font-family: $display;
+      margin-bottom: 0;
+    }
+    &__discription {
+      font-size: 1.2rem;
+    }
   }
+
   &__title {
-    text-align: center;
-    font-size: 5rem;
-  }
-  &__button {
-    border-color: $orange;
-    color: $orange;
-    background-color: white;
-  }
-  &__button:hover {
-    color: white;
-    background-color: $orange;
+    font-family: $display;
   }
 }

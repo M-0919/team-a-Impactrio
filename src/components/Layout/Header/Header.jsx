@@ -4,47 +4,11 @@ import Image from "../../Image"
 import { Link } from "gatsby"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
-// import { useStaticQuery, graphql } from "gatsby"
 
-const Header = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
+const Header = ({ path }) => {
   return (
-    <header className="header bg-light">
-      {/* <Navbar collapseOnSelect expand="lg">
-        <Navbar.Brand href="#home">
-          <Link to="/">
-            <div className="header__logo">
-              <Image filename={"logoA.png"} alt="logo" />
-            </div>
-          </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto"></Nav>
-          <Nav>
-            <Nav.Link eventKey={2}>
-              <Link to="/howItWorks">How It Works</Link>
-            </Nav.Link>
-            <Nav.Link eventKey={2}>
-              <Link to="/aboutUs">About Us</Link>
-            </Nav.Link>
-            <Nav.Link eventKey={2}>
-              <Link to="/successStories">Success Stories</Link>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar> */}
-      <Navbar collapseOnSelect expand="lg">
+    <header className="header wrap">
+      <Navbar collapseOnSelect expand="lg" className="py-3">
         <Navbar.Brand as={Link} to="/">
           <div className="header__logo">
             <Image filename={"logoA.png"} alt="logo" />
@@ -54,13 +18,34 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
-            <Nav.Link as={Link} to="/howItWorks" eventKey={2}>
+            <Nav.Link
+              as={Link}
+              to="/howItWorks"
+              eventKey={2}
+              className={`header__nav-link ${
+                path === "/howItWorks/" ? "header__nav-link-isActive" : ""
+              }`}
+            >
               How It Works
             </Nav.Link>
-            <Nav.Link as={Link} to="/aboutUs" eventKey={2}>
+            <Nav.Link
+              as={Link}
+              to="/aboutUs"
+              eventKey={2}
+              className={`header__nav-link ${
+                path === "/aboutUs/" ? "header__nav-link-isActive" : ""
+              }`}
+            >
               About Us
             </Nav.Link>
-            <Nav.Link as={Link} to="/successStories" eventKey={2}>
+            <Nav.Link
+              as={Link}
+              to="/successStories"
+              eventKey={2}
+              className={`header__nav-link ${
+                path === "/successStories/" ? "header__nav-link-isActive" : ""
+              }`}
+            >
               Success Stories
             </Nav.Link>
           </Nav>
