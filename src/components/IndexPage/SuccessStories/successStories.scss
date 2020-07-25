@@ -13,6 +13,14 @@
 .home__stories {
   color: $text;
   font-family: $body;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
   &__card-items {
     @media (max-width: 1024px) {
       width: 95%;
