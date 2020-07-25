@@ -20,7 +20,7 @@ const Footer = () => {
   // `)
 
   return (
-    <footer className="footer bg-custom-lightGrey py-5">
+    <footer className="footer bg-custom-lightGray py-5">
       <Container>
         <Row>
           <Col
