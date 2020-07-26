@@ -2,7 +2,7 @@ import React from "react"
 import Button from "react-bootstrap/Button"
 import "./elements.scss"
 
-export const StyledButton = ({ children, outline }) => {
+export const StyledButton = ({ children, outline, type }) => {
   const myButtonStyle = {
     padding: "0.5rem 1rem",
     fontSize: "1.2rem",
@@ -15,6 +15,7 @@ export const StyledButton = ({ children, outline }) => {
           : "btn-outline-custom-orange  bg-white text-custom-orange"
       } `}
       style={myButtonStyle}
+      type={type ? "submit" : "button"}
     >
       {children}
     </Button>
