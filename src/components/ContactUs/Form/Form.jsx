@@ -70,8 +70,8 @@ const ContactUs = () => {
       <Row className="mt-3">
         <Col className="text-left">
           <StyledButton type="submit">Submit</StyledButton>
-          <Form.Control.Feedback type="invalid">
-            Please enter your email name.
+          <Form.Control.Feedback>
+            Your infomations was successfully sent
           </Form.Control.Feedback>
         </Col>
       </Row>
