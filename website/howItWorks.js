@@ -35,7 +35,7 @@ module.exports = {
     "What makes Wheel for Change a unique impact investing platform?",
 
   enterpreneurRow1Data: {
-    image: "how-row1-up.png",
+    image: "how-row1-up.jpg",
     title: "Collaborate",
     discription:
       "Easily work with your team members in building a project profile by adding their email addresses.",
@@ -45,7 +45,7 @@ module.exports = {
     " What makes Wheel for Change a unique impact investing platform?",
 
   enterpreneurRow2Data: {
-    image: "how-row1-bottom.png",
+    image: "how-row1-bottom.jpg",
     title1: "Track",
     discription1:
       "Efficiently achieve your goals by tracking your team’s progress with our real-time update indicators.",
@@ -90,14 +90,14 @@ module.exports = {
     "What makes Wheel for Change a unique impact investing platform?",
 
   investorRow1Data: {
-    image: "how-row2-up.png",
+    image: "how-row2-up.jpg",
     title: "Compare",
     discription:
       "Considering multiple projects? Compare them so that you can make sure you’re making the right decision.",
   },
 
   investorRow2Data: {
-    image: "how-row2-bottom.png",
+    image: "how-row2-bottom.jpg",
     title: "Network",
     discription:
       "Connect on a more personal level and discuss your interests through sending direct messages to social entrepreneurs.",
