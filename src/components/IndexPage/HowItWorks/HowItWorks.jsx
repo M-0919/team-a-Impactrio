@@ -7,20 +7,8 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { StyledButton } from "../../Elements/Elements"
-// import { useStaticQuery, graphql } from "gatsby"
 
 const HowItWorks = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <div className="home__how py-5 wrap">
       <Container className="home__how__container">

@@ -23,7 +23,7 @@ const SuccessStories = () => {
             }
             thumbnail {
               fluid {
-                ...GatsbyContentfulFluid
+                ...GatsbyContentfulFluid_withWebp_noBase64
               }
             }
           }

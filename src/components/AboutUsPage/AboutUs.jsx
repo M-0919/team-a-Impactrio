@@ -16,7 +16,7 @@ const AboutUs = () => {
           node {
             image {
               fluid(maxWidth: 120) {
-                ...GatsbyContentfulFluid
+                ...GatsbyContentfulFluid_withWebp_noBase64
               }
             }
             name

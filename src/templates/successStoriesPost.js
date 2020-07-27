@@ -46,7 +46,7 @@ export const pageQuery = graphql`
       }
       thumbnail {
         fluid {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp_noBase64
         }
       }
       description

@@ -5,20 +5,8 @@ import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-// import { useStaticQuery, graphql } from "gatsby"
 
 const Footer = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <footer className="footer bg-custom-lightGray py-5">
       <Container>

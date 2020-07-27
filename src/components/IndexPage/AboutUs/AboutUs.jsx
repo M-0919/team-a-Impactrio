@@ -2,27 +2,8 @@ import React from "react"
 import "./aboutUs.scss"
 import Hero from "./Hero"
 import { StyledButton } from "../../Elements/Elements"
-// import { Link } from "gatsby"
-// import { useStaticQuery, graphql } from "gatsby"
 
 const AboutUs = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // const myStyle = {
-  //   background: `url(${Background}) center`,
-  //   backgroundSize: "contain",
-  //   backgroundRepeat: "no-repeat",
-  // }
-
   return (
     <Hero className="home__about__hero">
       <div className="home__about wrap py-5">

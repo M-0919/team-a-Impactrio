@@ -9,7 +9,7 @@ const Banner1 = ({ className, children }) => (
         file(relativePath: { eq: "aboutUs_banner1.jpg" }) {
           childImageSharp {
             fluid(quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
