@@ -21,16 +21,6 @@ const Header = ({ path }) => {
             <Nav>
               <Nav.Link
                 as={Link}
-                to="/howItWorks"
-                eventKey={2}
-                className={`header__nav-link ${
-                  path === "/howItWorks/" ? "header__nav-link-isActive" : ""
-                }`}
-              >
-                How It Works
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
                 to="/aboutUs"
                 eventKey={2}
                 className={`header__nav-link ${
@@ -41,6 +31,17 @@ const Header = ({ path }) => {
               </Nav.Link>
               <Nav.Link
                 as={Link}
+                to="/howItWorks"
+                eventKey={2}
+                className={`header__nav-link ${
+                  path === "/howItWorks/" ? "header__nav-link-isActive" : ""
+                }`}
+              >
+                How It Works
+              </Nav.Link>
+
+              <Nav.Link
+                as={Link}
                 to="/successStories"
                 eventKey={2}
                 className={`header__nav-link ${
@@ -48,6 +49,16 @@ const Header = ({ path }) => {
                 }`}
               >
                 Success Stories
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/contactUs"
+                eventKey={2}
+                className={`header__nav-link ${
+                  path === "/contactUs/" ? "header__nav-link-isActive" : ""
+                }`}
+              >
+                Contact Us
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
