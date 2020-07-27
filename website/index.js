@@ -4,7 +4,7 @@ module.exports = {
       title: "Investore",
       icon: "growth.png",
       description:
-        "Wheel for Change allows you to invest in social enterprises through a few simple steps online. Our platform gives investors access to impact driven investment opportunities.",
+        "Impactraction allows you to invest in social enterprises through a few simple steps online. Our platform gives investors access to impact driven investment opportunities.",
     },
     {
       title: "How It Works",

@@ -32,7 +32,7 @@ module.exports = {
   ],
 
   enterpreneurSubtitle:
-    "What makes Wheel for Change a unique impact investing platform?",
+    "What makes Impactraction a unique impact investing platform?",
 
   enterpreneurRow1Data: {
     image: "how-row1-up.jpg",
@@ -42,7 +42,7 @@ module.exports = {
   },
 
   enterpreneurButtonText:
-    " What makes Wheel for Change a unique impact investing platform?",
+    " What makes Impactraction a unique impact investing platform?",
 
   enterpreneurRow2Data: {
     image: "how-row1-bottom.jpg",
@@ -87,7 +87,7 @@ module.exports = {
   ],
 
   investorSubtitle:
-    "What makes Wheel for Change a unique impact investing platform?",
+    "What makes Impactraction a unique impact investing platform?",
 
   investorRow1Data: {
     image: "how-row2-up.jpg",

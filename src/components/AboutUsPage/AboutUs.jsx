@@ -48,15 +48,15 @@ const AboutUs = () => {
         <p className="inner-wrap">
           This is a platform that connects investors and entrepreneurs who drive
           social change. Our web application incorporates a framework, called
-          Wheel for Change, which measures the social impact of your projects
-          and helps you connect with potential investors.
+          Impactraction, which measures the social impact of your projects and
+          helps you connect with potential investors.
         </p>
         <p className="inner-wrap mt-3">
-          Wheel for Change acts as a mentor who unlocks someone’s
-          entrepreneurial and impact potential; a facilitator who finds common
-          objectives among investors and entrepreneurs; an innovator who wants
-          to create an impact in the community; and a communicator who conveys
-          ideas clearly and simply.
+          Impactraction acts as a mentor who unlocks someone’s entrepreneurial
+          and impact potential; a facilitator who finds common objectives among
+          investors and entrepreneurs; an innovator who wants to create an
+          impact in the community; and a communicator who conveys ideas clearly
+          and simply.
         </p>
         <br />
       </div>

@@ -18,7 +18,7 @@ module.exports = {
     )
   },
   siteMetadata: {
-    title: `Impactify`,
+    title: `Impactraction`,
     description: `A hybrid (online+ offline coaching) learning platform specialized in social innovation, sustainability, and soft skills.`,
     author: `CICCC`,
   },

@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className="home__about wrap py-5">
         <div className="home__about__description p-5">
           <h1 className="font-weight-bold">
-            Wheel for Change is a platform that connects investors and
+            Impactraction is a platform that connects investors and
             entrepreneurs who drive social change.
           </h1>
           <div className="my-3">

@@ -32,11 +32,6 @@ const SuccessStories = () => {
     }
   `)
 
-  // console.log(
-  //   JSON.stringify(data.allContentfulSuccessStories.edges[0].node.text));
-
-  // console.log(data)
-
   const successPost = data.allContentfulSuccessStories.edges
   return (
     <>
