@@ -32,7 +32,7 @@ const HowItWorks = () => {
 
       <div className="text-center pt-5 pb-3">
         <Link to="/howItWorks">
-          <StyledButton outline={true}>Learn more</StyledButton>
+          <StyledButton outline={true}>How It Works</StyledButton>
         </Link>
       </div>
     </div>

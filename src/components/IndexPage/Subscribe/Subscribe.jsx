@@ -54,8 +54,10 @@ const Subscribe = () => {
           <Row className="justify-content-center">
             <Col md={6}>
               <div className="home__subscribe__text">
-                Subscribe to our monthly newsletter and stay up to date with all
-                news and updates.
+                <label htmlFor="emailAddress">
+                  Subscribe to our monthly newsletter and stay up to date with
+                  all news and updates.
+                </label>
               </div>
             </Col>
             <Col md={6} className="align-self-center">

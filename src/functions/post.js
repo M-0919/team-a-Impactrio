@@ -31,10 +31,13 @@ exports.handler = (event, context, callback) => {
       })
     })
 
-    .catch(({ response }) => {
+    .catch(() => {
       callback(null, {
         statusCode: 400,
-        body: JSON.stringify({ fetch: false, message: response.data }),
+        body: JSON.stringify({
+          fetch: false,
+          message: "There seems to be a problem.",
+        }),
       })
     })
 }

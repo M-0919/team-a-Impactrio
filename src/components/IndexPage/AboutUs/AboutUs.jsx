@@ -1,6 +1,7 @@
 import React from "react"
 import "./aboutUs.scss"
 import Hero from "./Hero"
+import { Link } from "gatsby"
 import { StyledButton } from "../../Elements/Elements"
 
 const AboutUs = () => {
@@ -13,9 +14,11 @@ const AboutUs = () => {
             entrepreneurs who drive social change.
           </h1>
           <div className="my-3">
-            <StyledButton outline={true}>
-              Read more about what we do
-            </StyledButton>
+            <Link to="aboutUs">
+              <StyledButton outline={true}>
+                Read more about what we do
+              </StyledButton>
+            </Link>
           </div>
         </div>
       </div>
