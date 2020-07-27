@@ -3,8 +3,10 @@ import "./form.scss"
 import Form from "react-bootstrap/Form"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import postRequest from "../../../lib/postRequest"
+import dataFormatter from "../../../lib/dataFormatter"
 
-import { StyledButton } from "../../Elements/Elements"
+import { StyledSubmitButton } from "../../Elements/Elements"
 
 // import { Link } from "gatsby"
 
@@ -13,25 +15,39 @@ const ContactUs = () => {
     firstName: "",
     lastName: "",
     companyName: "",
+    emailAddress: "",
     message: "",
   })
+  const [message, setMessage] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [boolean, setBoolean] = useState(null)
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    const form = e.currentTarget
-    if (form.checkValidity() === false) {
-      e.preventDefault()
-      e.stopPropagation()
-    }
 
-    setData({
-      ...data,
-      firstName: "",
-      lastName: "",
-      companyName: "",
-      emailAddress: "",
-      message: "",
-    })
+    setIsLoading(true)
+    const res = await postRequest(
+      "/.netlify/functions/post",
+      dataFormatter(data)
+    ).then(res => res)
+
+    if (res.fetch) {
+      setData({
+        ...data,
+        firstName: "",
+        lastName: "",
+        companyName: "",
+        emailAddress: "",
+        message: "",
+      })
+      setBoolean(true)
+      setIsLoading(false)
+      setMessage("Your message was successfully sent.")
+    } else if (!res.fetch) {
+      setBoolean(false)
+      setIsLoading(false)
+      setMessage(res.message)
+    }
   }
 
   const handleChange = e => {
@@ -106,8 +122,12 @@ const ContactUs = () => {
       </Row>
       <Row className="mt-3">
         <Col className="text-left">
-          <StyledButton type="submit">Submit</StyledButton>
-          <p className="text-success">Your infomations was successfully sent</p>
+          <StyledSubmitButton isLoading={isLoading} handleClick={handleSubmit}>
+            Submit
+          </StyledSubmitButton>
+          <p className={`${boolean ? "text-success" : "text-danger"}`}>
+            {message}
+          </p>
         </Col>
       </Row>
     </form>

@@ -1,10 +1,22 @@
 const dotenv = require("dotenv")
+const { createProxyMiddleware } = require("http-proxy-middleware")
 
 if (process.env.NODE_ENV !== "production") {
   dotenv.config()
 }
 
 module.exports = {
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      createProxyMiddleware({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    )
+  },
   siteMetadata: {
     title: `Impactify`,
     description: `A hybrid (online+ offline coaching) learning platform specialized in social innovation, sustainability, and soft skills.`,
