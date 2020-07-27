@@ -13,6 +13,13 @@
       font-weight: 800;
     }
   }
+  &__thumbnail {
+    width: 60%;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
 
   .blogPostContent {
     font-family: $body;

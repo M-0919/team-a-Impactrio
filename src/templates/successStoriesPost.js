@@ -17,7 +17,9 @@ class SuccessStoriesPostTemplate extends React.Component {
         <div className="successStoriesPost wrap">
           <h1 className="title">{post.title}</h1>
 
-          <Img fluid={post.thumbnail.fluid} />
+          <div className="successStoriesPost__thumbnail">
+            <Img fluid={post.thumbnail.fluid} />
+          </div>
           <div
             className="blogPostContent my-5"
             dangerouslySetInnerHTML={{
@@ -45,7 +47,7 @@ export const pageQuery = graphql`
         }
       }
       thumbnail {
-        fluid {
+        fluid(quality: 90) {
           ...GatsbyContentfulFluid_withWebp_noBase64
         }
       }
