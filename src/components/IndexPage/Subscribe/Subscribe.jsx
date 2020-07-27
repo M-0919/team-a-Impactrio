@@ -1,25 +1,52 @@
-import React from "react"
+import React, { useState } from "react"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Form from "react-bootstrap/Form"
-import { StyledButton } from "../../Elements/Elements"
+import postRequest from "../../../lib/postRequest"
+import { StyledSubmitButton } from "../../Elements/Elements"
 import "./subscribe.scss"
 
-// import { useStaticQuery, graphql } from "gatsby"
-
 const Subscribe = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
+  const [address, setAddress] = useState("")
 
+  const [message, setMessage] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [boolean, setBoolean] = useState(null)
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+
+    const data = {
+      properties: [
+        {
+          name: "email",
+          value: address,
+          subtype: "any",
+        },
+      ],
+    }
+
+    setIsLoading(true)
+    const res = await postRequest("/.netlify/functions/post", data).then(
+      res => res
+    )
+
+    if (res.fetch) {
+      setAddress("")
+      setBoolean(true)
+      setIsLoading(false)
+      setMessage("successfully subscribed.")
+    } else if (!res.fetch) {
+      setBoolean(false)
+      setIsLoading(false)
+      setMessage(res.message)
+    }
+  }
+
+  const handleChange = e => {
+    setAddress(e.target.value)
+  }
   return (
     <div className="home__subscribe py-5 bg-custom-lightOrange">
       <div className="wrap">
@@ -37,9 +64,26 @@ const Subscribe = () => {
                   type="email"
                   placeholder="Enter your email address"
                   className="home__subscribe__form mr-3"
+                  required
+                  size="lg"
+                  id="emailAddress"
+                  onChange={handleChange}
+                  value={address || ""}
                 />
-                <StyledButton>Read more</StyledButton>
+                <StyledSubmitButton
+                  isLoading={isLoading}
+                  handleClick={handleSubmit}
+                >
+                  Read more
+                </StyledSubmitButton>
               </div>
+              <p
+                className={`home__subscribe__message text-center ${
+                  boolean ? "text-success" : "text-danger"
+                }`}
+              >
+                {message}
+              </p>
             </Col>
           </Row>
         </Container>
