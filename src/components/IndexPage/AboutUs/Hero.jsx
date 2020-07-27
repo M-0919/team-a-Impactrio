@@ -8,7 +8,7 @@ const Hero = ({ className, children }) => (
       query {
         file(relativePath: { eq: "office.jpg" }) {
           childImageSharp {
-            fluid {
+            fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
