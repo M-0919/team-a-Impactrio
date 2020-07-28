@@ -40,8 +40,8 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
-          name="robots",
-          content="noindex"
+          name: `robots`,
+          content: `noindex`,
         },
         {
           property: `og:title`,
