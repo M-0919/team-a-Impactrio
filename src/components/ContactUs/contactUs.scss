@@ -1,0 +1,20 @@
+@import "../../styles/valiable";
+
+// Styling regulation
+// 1. Please follow [bootstrap document] (https://getbootstrap.com/) [react-bootstrap] (https://react-bootstrap.github.io/).
+// 2. Don't need to compile your Scss file, because node-sass automatically compile them.
+// 3. To avoid your class-name effect others section, please put your section name on the beginning of your class name,
+//    `ex).yourSectionName__container`. Ps boiler-plate follows [BEM naming](https://css-tricks.com/using-sass-control-scope-bem-naming/)
+// 4. Please use Scss valiables defined on src/styles/valiable.scss,
+//    ex) `.yourSectionName__container{background-colour:$orenge}`, in case of Bootstrap ex) `text-custom-orange` => `color:#fa7921`
+// 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
+// 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
+
+.contactUs {
+  color: $text;
+  &__title {
+    font-family: $display;
+    font-weight: bold;
+    text-align: center;
+  }
+}

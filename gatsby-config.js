@@ -1,12 +1,24 @@
 const dotenv = require("dotenv")
+const { createProxyMiddleware } = require("http-proxy-middleware")
 
 if (process.env.NODE_ENV !== "production") {
   dotenv.config()
 }
 
 module.exports = {
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      createProxyMiddleware({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    )
+  },
   siteMetadata: {
-    title: `Impactify`,
+    title: `Impactraction`,
     description: `A hybrid (online+ offline coaching) learning platform specialized in social innovation, sustainability, and soft skills.`,
     author: `CICCC`,
   },
@@ -30,6 +42,17 @@ module.exports = {
     },
     {
       resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              quality: 70,
+              withWebp: true,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-source-contentful`,
@@ -56,7 +79,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logoA.png`, // This path is relative to the root of the site.
+        icon: `src/images/logoC.png`, // This path is relative to the root of the site.
       },
     },
 

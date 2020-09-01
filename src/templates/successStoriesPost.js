@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 // Styles
-import stylesSuccess from "./successStoriesPost.module.scss"
+import "./successStoriesPost.scss"
 
 class SuccessStoriesPostTemplate extends React.Component {
   render() {
@@ -14,31 +14,16 @@ class SuccessStoriesPostTemplate extends React.Component {
     return (
       <>
         <SEO title={post.title} />
-        <div className={stylesSuccess.container}>
-          <div className={stylesSuccess.title}>
-            <h1>{post.title}</h1>
+        <div className="successStoriesPost wrap">
+          <h1 className="title">{post.title}</h1>
+
+          <div className="successStoriesPost__thumbnail">
+            <Img fluid={post.thumbnail.fluid} />
           </div>
-          <p
-            style={{
-              display: `block`,
-            }}
-          >
-            {post.date}
-          </p>
-          <Img fluid={post.thumbnail.fluid} />
           <div
-            className={stylesSuccess.blogPostContent}
+            className="blogPostContent my-5"
             dangerouslySetInnerHTML={{
               __html: post.text.childMarkdownRemark.html,
-            }}
-          />
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
             }}
           />
         </div>
@@ -62,8 +47,8 @@ export const pageQuery = graphql`
         }
       }
       thumbnail {
-        fluid {
-          ...GatsbyContentfulFluid
+        fluid(quality: 90) {
+          ...GatsbyContentfulFluid_withWebp_noBase64
         }
       }
       description

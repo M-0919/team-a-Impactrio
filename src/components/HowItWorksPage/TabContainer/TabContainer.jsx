@@ -40,8 +40,8 @@ export const TabContainer = () => {
               <CardItems array={config.enterpreneurCardData} />
             </div>
             <div className="bg-white mb-5 how-tabs__row-container">
-              <div className="inner-wrap">
-                <h2 className="text-custom-text text-center font-weight-bold py-5 ">
+              <div className="wrap">
+                <h2 className="text-custom-text text-center font-weight-bold py-5">
                   {config.enterpreneurSubtitle}
                 </h2>
                 <Row1 object={config.enterpreneurRow1Data} />
@@ -73,16 +73,18 @@ export const TabContainer = () => {
               <CardItems array={config.investorCardData} green={true} />
             </div>
             <div className="bg-white mb-5">
-              <h2 className="text-custom-text text-center font-weight-bold py-5">
-                {config.investorSubtitle}
-              </h2>
-              <Row1 object={config.investorRow1Data} />
-              <Row2 object={config.investorRow2Data} />
-              <div className="text-center how-tabs__footer">
-                <span className="text-custom-text text-center font-weight-bold mr-5 how-tabs__footer__button-text">
-                  {config.investorButtonText}
-                </span>
-                <StyledButton>Sign Up</StyledButton>
+              <div className="wrap">
+                <h2 className="text-custom-text text-center font-weight-bold py-5">
+                  {config.investorSubtitle}
+                </h2>
+                <Row1 object={config.investorRow1Data} />
+                <Row2 object={config.investorRow2Data} />
+                <div className="text-center how-tabs__footer inner-wrap">
+                  <span className="text-custom-text text-center font-weight-bold mr-5 how-tabs__footer__button-text">
+                    {config.investorButtonText}
+                  </span>
+                  <StyledButton>Sign Up</StyledButton>
+                </div>
               </div>
             </div>
           </Tab>

@@ -1,92 +1,38 @@
 import React from "react"
 import "./howItWorks.scss"
 import Image from "../../Image"
+import { howItWorks } from "../../../../website/index"
 import { Link } from "gatsby"
-// import { useStaticQuery, graphql } from "gatsby"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import { StyledButton } from "../../Elements/Elements"
 
 const HowItWorks = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <div className="home__how py-5 wrap">
-      <div className="d-flex flex-wrap justify-content-center">
-        <div className="row">
-          <div className="col-sm-10 col-md-3">
-            <div className="card m-3" style={{ width: "18rem" }}>
-              <Image
-                Image
-                filename={"growth.png"}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h2 className="card-title">Investors</h2>
-                <p className="card-text">
-                  Impactraction allows you to invest in social enterprises
-                  through a few simple steps online. Our platform gives
-                  investors access to impact driven investment opportunities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <Container className="home__how__container">
+        <Row className="justify-content-around">
+          {howItWorks.map((item, index) => {
+            const { title, description, icon } = item
+            return (
+              <Col key={index} md={3} className="home__how__column">
+                <div className="home__how__column__image">
+                  <Image filename={icon} />
+                </div>
+                <div className="home__how__column__description">
+                  <h2 className="home__how__column__title mt-5">{title}</h2>
+                  <p className="home__how__column__text">{description}</p>
+                </div>
+              </Col>
+            )
+          })}
+        </Row>
+      </Container>
 
-        <div className="row">
-          <div className="col-sm-10 col-md-3">
-            <div className="card m-3" style={{ width: "18rem" }}>
-              <Image
-                Image
-                filename={"project.png"}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h2 className="card-title">How It Works</h2>
-                <p className="card-text">
-                  Impactraction helps you connect with social investors. We give
-                  entrepreneurs and their projects support on raising funds,
-                  from ideation to measuring their impact.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-sm-10 col-md-3">
-            <div className="card m-3" style={{ width: "18rem" }}>
-              <Image
-                Image
-                filename={"bar-chart.png"}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h2 className="card-title">Entrepreneurs</h2>
-                <p className="card-text">
-                  Investors can select and invest on opportunities that supports
-                  their cause by utilizing the platform and leveraging our
-                  extensive investment projects and effective networking
-                  process.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-center">
-        <Link to="/howItWorks" className="btn home__how__button">
-          Learn more
+      <div className="text-center pt-5 pb-3">
+        <Link to="/howItWorks">
+          <StyledButton outline={true}>How It Works</StyledButton>
         </Link>
       </div>
     </div>

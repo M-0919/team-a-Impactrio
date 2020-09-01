@@ -11,12 +11,36 @@
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
 .footer {
-  height: 15rem;
-  &__image {
-    width: 20rem;
-  }
+  color: $text;
   &__title {
     font-size: 5rem;
     text-align: center;
+  }
+  &__menu-title {
+    opacity: 0.8;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  &__menu-list {
+    opacity: 0.8;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    &__item {
+      margin-top: 0.5rem;
+      a:hover {
+        color: inherit;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    &__menu-title {
+      opacity: 0.8;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    &__menu-list {
+      opacity: 0.8;
+      font-size: 1.6rem;
+    }
   }
 }

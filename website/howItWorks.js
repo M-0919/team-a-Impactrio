@@ -13,7 +13,7 @@ module.exports = {
     },
     {
       title: "Apply for funds",
-      icon: "/how-touch_app-black-48dp.svg",
+      icon: "/how-book_online-black-48dp.svg",
       discription:
         "Once you’ve completed our platform’s unique project creation process, you can start to apply for funding by stating the type of investment you’re offering and how much you plan to raise.",
     },
@@ -32,7 +32,7 @@ module.exports = {
   ],
 
   enterpreneurSubtitle:
-    "What makes Wheel for Change a unique impact investing platform?",
+    "What makes Impactraction a unique impact investing platform?",
 
   enterpreneurRow1Data: {
     image: "how-row1-up.jpg",
@@ -42,7 +42,7 @@ module.exports = {
   },
 
   enterpreneurButtonText:
-    " What makes Wheel for Change a unique impact investing platform?",
+    " What makes Impactraction a unique impact investing platform?",
 
   enterpreneurRow2Data: {
     image: "how-row1-bottom.jpg",
@@ -62,19 +62,19 @@ module.exports = {
   investorCardData: [
     {
       title: "Select a project",
-      icon: "/how-create-black-48dp.svg",
+      icon: "/how-touch_app-black-48dp.svg",
       discription:
         "View all current investment opportunities on the platform. We review processes on all enterprises to analyze their project, traction, risk, and social impact.",
     },
     {
       title: "Learn more",
-      icon: "/how-touch_app-black-48dp.svg",
+      icon: "/how-menu_book-black-48dp.svg",
       discription:
         "Once you’ve completed our platform’s unique project creation process, you can start to apply for funding by stating the type of investment you’re offering and how much you plan to raise.",
     },
     {
       title: "Compare and Review",
-      icon: "/how-open_in_new-black-48dp.svg",
+      icon: "/how-compare-black-48dp.svg",
       discription:
         "If you have other projects that you are interested at, try comparing them to one another by utilizing the compare feature on our platform. This will help make sure you are choosing the right investment that is suited for you.",
     },
@@ -87,7 +87,7 @@ module.exports = {
   ],
 
   investorSubtitle:
-    "What makes Wheel for Change a unique impact investing platform?",
+    "What makes Impactraction a unique impact investing platform?",
 
   investorRow1Data: {
     image: "how-row2-up.jpg",

@@ -11,20 +11,42 @@
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
 .home__subscribe {
-  &__image {
-    width: 10rem;
+  &__wrap {
+    width: 65%;
   }
-  &__title {
-    text-align: center;
-    font-size: 5rem;
+  &__text {
+    color: $text;
+    font-weight: bold;
+    font-family: $display;
   }
-  &__button {
-    background-color: $orange;
-    color: white;
+  &__form {
+    width: 70%;
   }
-  &__button:hover {
-    color: $orange;
-    background-color: white;
-    border-color: $orange;
+  .form-control {
+    height: initial;
+    border: none;
+  }
+
+  &__message {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  @media (max-width: 1024px) {
+    &__wrap {
+      width: 90%;
+    }
+  }
+  @media (max-width: 576px) {
+    &__text {
+      text-align: center;
+    }
+    &__form {
+      width: 60%;
+    }
+    &__container {
+      justify-content: center;
+      margin-top: 3rem;
+    }
   }
 }

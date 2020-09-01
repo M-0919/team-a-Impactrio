@@ -2,42 +2,43 @@ import React from "react"
 import "./footer.scss"
 import Image from "../../Image"
 import { Link } from "gatsby"
-// import { useStaticQuery, graphql } from "gatsby"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
 const Footer = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
-    <footer className="footer  bg-custom-lightGreen">
-      <div className="wrap d-flex justify-content-center">
-        <div className="footer__image mt-5 pt-5">
-          <Image className="align-middle pt-5" filename={"logoB.png"} />
-        </div>
-        <div className="footer_links mt-4">
-          <div>MENU</div>
-          <div>
-            <Link to="/aboutUs">About Us</Link>
-          </div>
-          <div>
-            <Link to="/howItWorks">How It Works</Link>
-          </div>
-          <div>
-            <Link to="/successStories">Success Stories</Link>
-          </div>
-          <div>
-            <Link to="/">Contact Us</Link>
-          </div>
-        </div>
-      </div>
+    <footer className="footer bg-custom-lightGray py-5">
+      <Container>
+        <Row>
+          <Col
+            lg={{ span: 2, offset: 3 }}
+            md={{ span: 3, offset: 2 }}
+            xs={{ span: 6 }}
+            className="align-self-center"
+          >
+            <Image filename={"logoB.png"} />
+          </Col>
+
+          <Col md={{ span: 6, offset: 1 }} xs={{ span: 6 }}>
+            <h2 className="footer__menu-title">MENU</h2>
+            <ul className="footer__menu-list">
+              <li className="footer__menu-list__item">
+                <Link to="/aboutUs">About Us</Link>
+              </li>
+              <li className="footer__menu-list__item">
+                <Link to="/howItWorks">How It Works</Link>
+              </li>
+              <li className="footer__menu-list__item">
+                <Link to="/successStories">Success Stories</Link>
+              </li>
+              <li className="footer__menu-list__item">
+                <Link to="/contactUs">Contact Us</Link>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </footer>
   )
 }

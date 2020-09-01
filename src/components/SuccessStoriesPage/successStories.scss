@@ -16,37 +16,64 @@
   font-family: "Nunito", sans-serif;
   &__title h1 {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 800;
   }
   &__subtitle h4 {
     text-align: center;
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: -3rem;
+    font-size: 1.6rem;
   }
   &__card h3 {
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    margin: 2rem 1.5rem;
   }
   &__card {
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     margin-top: 1.5rem;
     margin-bottom: 5rem;
+
+    &__button2 {
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      &__button {
+        margin-top: 1rem;
+      }
+      &__button2 {
+        margin: 1rem 0 0 0 !important;
+      }
+    }
   }
-  &__card p {
-    margin: 0 1.5rem 1.7rem 1.5rem;
-  }
+
   &__footer h2 {
     margin-bottom: 5rem;
     font-weight: 600;
   }
-}
-
-.card {
-  margin-top: 3rem;
+  .card {
+    margin-top: 3rem;
+  }
+  .card-body {
+    padding: 3rem;
+  }
+  @media (max-width: 768px) {
+    .col-md-5 {
+      max-width: 100%;
+    }
+    &__image {
+      height: 20rem;
+    }
+    .card-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+    .card-body {
+      padding: 2rem;
+    }
+  }
 }

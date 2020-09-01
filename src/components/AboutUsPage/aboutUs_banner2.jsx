@@ -8,8 +8,8 @@ const Banner2 = ({ className, children }) => (
       query {
         file(relativePath: { eq: "aboutUs_banner2.jpg" }) {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
