@@ -1,26 +1,41 @@
-const dotenv = require("dotenv")
-const { createProxyMiddleware } = require("http-proxy-middleware")
+const path = require(`path`)
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config()
+
+
+// const dotenv = require("dotenv")
+// const { createProxyMiddleware } = require("http-proxy-middleware")
+
+// if (process.env.NODE_ENV !== "production") {
+//   dotenv.config()
+// }
+module.exports = {
+  plugins: [`gatsby-plugin-fontawesome-css`],
 }
 
+
 module.exports = {
-  developMiddleware: app => {
-    app.use(
-      "/.netlify/functions/",
-      createProxyMiddleware({
-        target: "http://localhost:9000",
-        pathRewrite: {
-          "/.netlify/functions/": "",
-        },
-      })
-    )
-  },
+  // developMiddleware: app => {
+  //   app.use(
+  //     "/.netlify/functions/",
+  //     createProxyMiddleware({
+  //       target: "http://localhost:9000",
+  //       pathRewrite: {
+  //         "/.netlify/functions/": "",
+  //       },
+  //     })
+  //   )
+  // },
   siteMetadata: {
-    title: `Impactraction`,
-    description: `A hybrid (online+ offline coaching) learning platform specialized in social innovation, sustainability, and soft skills.`,
-    author: `CICCC`,
+    title: `Brazilian Engineers and Architects in BC`,
+    description: `Organização de Brasileiros Engenheiros e Arquitetos em British Columbia - Canadá`,
+    author: `Grupo de Trabalho BEABC`,
+    copyright: `© 2020 ELEN FERREIRA | All Rights Reserved`,
+    siteUrl: `https://beabc.ca/`,
+    socialMedia: {
+      instagram: 'https://www.instagram.com/beabc_?utm_medium=copy_link',
+      linkedin: 'https://www.linkedin.com/company/beabc-canada',
+      twitter: 'https://www.twitter.com/'
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,22 +69,33 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.GATSBY_SPACE_ID,
-        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: process.env.GATSBY_SPACE_ID,
+    //     accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  
+
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
+    // `gatsby-transformer-sharp`,
+    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -79,7 +105,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logoC.png`, // This path is relative to the root of the site.
+        icon: `src/images/beabc_logo.png`, // This path is relative to the root of the site.
       },
     },
 

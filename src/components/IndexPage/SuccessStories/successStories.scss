@@ -10,64 +10,125 @@
 // 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
-.home__stories {
-  color: $text;
-  font-family: $body;
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+// @import "../../styles/global.scss";
 
-  a:hover {
-    opacity: 0.8;
-  }
-  &__card-items {
-    @media (max-width: 1024px) {
-      width: 95%;
-      margin: 0 auto;
-    }
-    @media (max-width: 992px) {
-      .col {
-        margin-top: 3rem;
-      }
-    }
-    @media (max-width: 768px) {
-      .card {
-        margin: 0;
-      }
 
-      .col:nth-child(1) {
-        margin-top: 0;
-      }
-      .col:nth-child(2) {
-        margin-top: 0;
-      }
-    }
-    @media (max-width: 576px) {
-      .row {
-        display: block;
-      }
 
-      .col:nth-child(2) {
-        margin-top: 3rem;
-      }
-    }
-
-    &__image {
-      border-top-left-radius: 0.25rem;
-      border-top-right-radius: 0.25rem;
-      height: 16.7rem;
-    }
-    &__title {
-      font-family: $display;
-      margin-bottom: 0;
-    }
-    &__discription {
-      font-size: 1.2rem;
-    }
-  }
-
-  &__title {
-    font-family: $display;
-  }
+.home__successStories__youtube {
+  margin: 10em auto;
+  width: 60%;
+  // background-position: top 15% left 50%;
 }
+// .home__successStories {
+//   color: $text;
+//   font-family: $display;
+//   height: 25em;
+
+  // &__description {
+  //   margin-top: 10em;
+  //   width: 47%;
+  //   background-color: rgba(255, 255, 255, 0.7);
+  // }
+
+  // @media (max-width: 800px) {
+  //   width: 50%;
+  //   // &__description {
+  //   //   width: 30%;
+  //   // }
+  // }
+//   @media (max-width: 768px) {
+//     &__description {
+//       width: 50%;
+//     }
+//   }
+//   @media (max-width: 576px) {
+//     &__description {
+//       width: 100%;
+//     }
+//   }
+// }
+
+
+
+
+
+
+// .video {
+//   width: 100vw;
+//   //height: 490px;
+//   margin: 0 auto 2em;
+//   &__trailer  {
+//     display: block;
+//     width: fit-content;
+//     height: fit-content;
+//     margin: auto;
+//     margin-top: 75px;
+//   }
+
+  // img {
+  //   max-width: 100%;
+  // }
+// }
+
+
+// .home__stories {
+//   color: $text;
+//   font-family: $body;
+//   a {
+//     color: inherit;
+//     text-decoration: none;
+//   }
+
+//   a:hover {
+//     opacity: 0.8;
+//   }
+//   &__card-items {
+//     @media (max-width: 1024px) {
+//       width: 95%;
+//       margin: 0 auto;
+//     }
+//     @media (max-width: 992px) {
+//       .col {
+//         margin-top: 3rem;
+//       }
+//     }
+//     @media (max-width: 768px) {
+//       .card {
+//         margin: 0;
+//       }
+
+//       .col:nth-child(1) {
+//         margin-top: 0;
+//       }
+//       .col:nth-child(2) {
+//         margin-top: 0;
+//       }
+//     }
+//     @media (max-width: 576px) {
+//       .row {
+//         display: block;
+//       }
+
+//       .col:nth-child(2) {
+//         margin-top: 3rem;
+//       }
+//     }
+
+//     &__image {
+//       border-top-left-radius: 0.25rem;
+//       border-top-right-radius: 0.25rem;
+//       height: 16.7rem;
+//     }
+//     &__title {
+//       font-family: $display;
+//       margin-bottom: 0;
+//     }
+//     &__discription {
+//       font-size: 1.2rem;
+//     }
+//   }
+
+//   &__title {
+//     font-family: $display;
+//   }
+// }

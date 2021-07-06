@@ -6,38 +6,37 @@ import "./companyInfo.scss"
 const CompanyInfo = () => {
   return (
     <div className="companyInfo mt-5">
-      <h2 className="mt-5">Location</h2>
+      <h2 className="mt-5">Cadastre-se:</h2>
       <p className="mt-3">
-        123 Slater Street, 6th Floor, Ottawa, Ontario K1P 5H2, Canada
+                    Cadastre seu email e associe-se com uma breve descrição da sua experiência como engenheiro ou arquiteto.
       </p>
-      <h2 className="mt-5">Hours</h2>
       <dl className="mt-3">
-        <dt>Mon.</dt>
-        <dd>09:00 a.m. – 05:00 p.m.</dd>
+        <dt></dt>
+        <dd></dd>
       </dl>
       <dl>
-        <dt>Tue.</dt>
-        <dd>09:00 a.m. – 05:00 p.m.</dd>
+        <dt></dt>
+        <dd></dd>
       </dl>
       <dl>
-        <dt>Wed.</dt>
-        <dd>09:00 a.m. – 05:00 p.m.</dd>
+        <dt></dt>
+        <dd></dd>
       </dl>
       <dl>
-        <dt>Thu.</dt>
-        <dd>09:00 a.m. – 05:00 p.m.</dd>
+        <dt></dt>
+        <dd></dd>
       </dl>
       <dl>
-        <dt>Fri.</dt>
-        <dd>09:00 a.m. – 05:00 p.m.</dd>
+        <dt></dt>
+        <dd></dd>
       </dl>
       <dl>
-        <dt>Sat.</dt>
-        <dd>closed</dd>
+        <dt></dt>
+        <dd></dd>
       </dl>
       <dl>
-        <dt>Sun.</dt>
-        <dd>closed</dd>
+        <dt></dt>
+        <dd></dd>
       </dl>
     </div>
   )

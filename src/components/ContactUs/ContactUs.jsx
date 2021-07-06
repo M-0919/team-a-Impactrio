@@ -12,7 +12,7 @@ import CompanyInfo from "./CompanyInfo/CompanyInfo"
 const ContactUs = () => {
   return (
     <div className="contactUs wrap my-5">
-      <h1 className="contactUs__title">Contact Us</h1>
+      <h1 className="contactUs__title">Contate-nos</h1>
       <Container>
         <Row>
           <Col className="align-self-center" lg={6} md={6} sm={12}>

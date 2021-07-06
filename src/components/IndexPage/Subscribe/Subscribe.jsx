@@ -36,7 +36,7 @@ const Subscribe = () => {
       setAddress("")
       setBoolean(true)
       setIsLoading(false)
-      setMessage("successfully subscribed.")
+      setMessage("Inscrição criada com sucesso.")
     } else if (!res.fetch) {
       setBoolean(false)
       setIsLoading(false)
@@ -55,8 +55,7 @@ const Subscribe = () => {
             <Col md={6}>
               <div className="home__subscribe__text">
                 <label htmlFor="emailAddress">
-                  Subscribe to our monthly newsletter and stay up to date with
-                  all news and updates.
+                  Cadastre seu email e receba notícias de eventos.
                 </label>
               </div>
             </Col>
@@ -64,7 +63,7 @@ const Subscribe = () => {
               <div className="d-flex home__subscribe__container">
                 <Form.Control
                   type="email"
-                  placeholder="Enter your email address"
+                  placeholder="Digite seu email"
                   className="home__subscribe__form mr-3"
                   required
                   size="lg"
@@ -76,7 +75,7 @@ const Subscribe = () => {
                   isLoading={isLoading}
                   handleClick={handleSubmit}
                 >
-                  Read more
+                  Enviar
                 </StyledSubmitButton>
               </div>
               <p

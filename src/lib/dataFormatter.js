@@ -17,11 +17,11 @@ export const dataFormatter = ({
         name: "last_name",
         value: lastName,
       },
-      {
-        type: "SYSTEM",
-        name: "company",
-        value: companyName,
-      },
+      // {
+      //   type: "SYSTEM",
+      //   name: "company",
+      //   value: companyName,
+      // },
       {
         name: "email",
         value: emailAddress,

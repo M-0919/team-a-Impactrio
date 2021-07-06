@@ -25,7 +25,7 @@
   }
 
   .nav-tabs #controlled-tab-investors.active {
-    border-bottom-color: $ligthGreen;
+    border-bottom-color: $lightGreen;
   }
 
   .nav-tabs .nav-link.active {
@@ -43,7 +43,8 @@
     border-left: 1px solid #dee2e6;
   }
   #controlled-tab-investors {
-    background-color: $ligthGreen;
+    // background-color: $lightGreen;
+        background-color: $lightGray;
     font-weight: bold;
     color: $text;
     width: 20%;

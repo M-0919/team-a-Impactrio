@@ -4,7 +4,7 @@ import TabContainer from "../components/HowItWorksPage/TabContainer/TabContainer
 
 const howItWorks = () => (
   <>
-    <SEO title="How It Wroks" />
+    <SEO title="How It Works" />
     <TabContainer />
   </>
 )

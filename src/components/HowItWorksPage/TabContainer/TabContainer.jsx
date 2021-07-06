@@ -25,7 +25,7 @@ export const TabContainer = () => {
         >
           <Tab
             eventKey="enterpreneurs"
-            title="Enterpreneurs"
+            title="Engenharia"
             className={`bg-custom-lightOrange`}
           >
             <div className="how-tabs__card-box wrap">
@@ -50,7 +50,7 @@ export const TabContainer = () => {
                   <span className="text-custom-text text-center font-weight-bold mr-5 how-tabs__footer__button-text">
                     {config.enterpreneurButtonText}
                   </span>
-                  <StyledButton>Sign Up</StyledButton>
+                  <StyledButton>Associa-se</StyledButton>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export const TabContainer = () => {
 
           <Tab
             eventKey="investors"
-            title="Investors"
+            title="Arquitetura"
             className="bg-custom-lightGreen"
           >
             <div className="how-tabs__card-box wrap">
@@ -83,7 +83,7 @@ export const TabContainer = () => {
                   <span className="text-custom-text text-center font-weight-bold mr-5 how-tabs__footer__button-text">
                     {config.investorButtonText}
                   </span>
-                  <StyledButton>Sign Up</StyledButton>
+                  <StyledButton>Associe-se</StyledButton>
                 </div>
               </div>
             </div>

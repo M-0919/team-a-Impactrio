@@ -14,7 +14,7 @@ const ContactUs = () => {
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
-    companyName: "",
+    // companyName: "",
     emailAddress: "",
     message: "",
   })
@@ -42,7 +42,7 @@ const ContactUs = () => {
       })
       setBoolean(true)
       setIsLoading(false)
-      setMessage("Your message was successfully sent.")
+      setMessage("Mensagem enviada com sucesso.")
     } else if (!res.fetch) {
       setBoolean(false)
       setIsLoading(false)
@@ -57,11 +57,11 @@ const ContactUs = () => {
   return (
     <form className="mt-5" onSubmit={handleSubmit}>
       <Form.Group>
-        <Form.Label>*Name</Form.Label>
+        <Form.Label>*Nome</Form.Label>
         <Row>
           <Col>
             <Form.Control
-              placeholder="First name"
+              placeholder="Nome"
               required
               size="lg"
               id="firstName"
@@ -71,7 +71,7 @@ const ContactUs = () => {
           </Col>
           <Col>
             <Form.Control
-              placeholder="Last name"
+              placeholder="Sobrenome"
               required
               size="lg"
               id="lastName"
@@ -81,7 +81,7 @@ const ContactUs = () => {
           </Col>
         </Row>
       </Form.Group>
-      <Row className="mt-3">
+      {/* <Row className="mt-3">
         <Col>
           <Form.Label>*Company</Form.Label>
           <Form.Control
@@ -93,12 +93,12 @@ const ContactUs = () => {
             value={data.companyName || ""}
           />
         </Col>
-      </Row>
+      </Row> */}
       <Row className="mt-3">
         <Col>
-          <Form.Label>*Email address</Form.Label>
+          <Form.Label>*Email</Form.Label>
           <Form.Control
-            placeholder="Email address"
+            placeholder="Endereço de email"
             required
             size="lg"
             id="emailAddress"
@@ -109,11 +109,11 @@ const ContactUs = () => {
       </Row>
       <Row className="mt-3">
         <Col>
-          <Form.Label>Message</Form.Label>
+          <Form.Label>Messagem</Form.Label>
           <Form.Control
             as="textarea"
             rows="5"
-            placeholder="Message"
+            placeholder="Messagem"
             id="message"
             onChange={handleChange}
             value={data.message || ""}
@@ -123,7 +123,7 @@ const ContactUs = () => {
       <Row className="mt-3">
         <Col className="text-left">
           <StyledSubmitButton isLoading={isLoading} handleClick={handleSubmit}>
-            Submit
+            Enviar
           </StyledSubmitButton>
           <p className={`${boolean ? "text-success" : "text-danger"}`}>
             {message}

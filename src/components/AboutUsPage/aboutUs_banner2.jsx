@@ -6,7 +6,7 @@ const Banner2 = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "aboutUs_banner2.jpg" }) {
+        file(relativePath: { eq: "aboutBanner2.JPG" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp_noBase64

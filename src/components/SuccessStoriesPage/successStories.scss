@@ -1,4 +1,4 @@
-@import "../../styles/valiable.scss";
+// @import "../../styles/valiable.scss";
 
 // Styling regulation
 // 1. Please follow [bootstrap document] (https://getbootstrap.com/) [react-bootstrap] (https://react-bootstrap.github.io/).
@@ -10,70 +10,327 @@
 // 5. Please use `rem` instead of `px`, that reasons is refered on this link [why rem, how to use rem](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) ex) `font-size:2rem`=>`font-size:20px//16px * 62.5% * 2`
 // 6. Please use bootstrap styles for spacing and font-size as possible as you can, because keeping consistent.
 
-.stories {
-  background-color: white;
-  color: $text;
-  font-family: "Nunito", sans-serif;
-  &__title h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-  }
-  &__subtitle h4 {
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  &__card h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  &__card {
-    font-size: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    margin-top: 1.5rem;
-    margin-bottom: 5rem;
 
-    &__button2 {
-      margin-top: 1.5rem;
-    }
+// html {
+//     position: relative;
+//     min-height: 100%;
+// }
 
-    @media (max-width: 768px) {
-      &__button {
-        margin-top: 1rem;
-      }
-      &__button2 {
-        margin: 1rem 0 0 0 !important;
-      }
-    }
-  }
 
-  &__footer h2 {
-    margin-bottom: 5rem;
-    font-weight: 600;
-  }
-  .card {
-    margin-top: 3rem;
-  }
-  .card-body {
-    padding: 3rem;
-  }
-  @media (max-width: 768px) {
-    .col-md-5 {
-      max-width: 100%;
-    }
-    &__image {
-      height: 20rem;
-    }
-    .card-text {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
-    }
-    .card-body {
-      padding: 2rem;
-    }
-  }
+
+/////////////////////
+
+// .title {
+//   text-align: center;
+//   margin-top: -220px;
+//   margin-left: 30px;
+//   padding: 10px;
+//   text-shadow: 2px 2px #000;
+//   color: #FFF;
+//   & h5 {
+//       font-size: 2rem;
+//   }
+//   & h1 {
+//       font-size: 3rem;
+//   }
+// }
+
+// .text {
+//   // font-size: 3rem;
+//   // font-weight: bold;
+//   position: absolute;
+//   margin-left: 35%;
+//   opacity: 0;
+//   animation: fader 6s infinite;
+// }
+/* cada texto tem um delay de 5 + o valor do delay anterior, meno o primeiro */
+// .a {
+//   animation-delay: 0s;    
+// }
+// .b {
+//   animation-delay: 3s;
+// }
+
+/* Animação acontece apenas entre 0 e 20%, pois são 5 elementos */
+// @keyframes fader {
+//   10% {
+//       opacity: 1;
+//   }
+//   50% {
+//       opacity: 0;
+//   }
+// }
+
+// .img-responsive {
+//   width: 40%;
+//   background-color: white;
+//   display: block;
+//   margin-top: -650px;
+//   border-radius: 50%;
+//   opacity: 1;
+// }
+
+// @media(max-width:768px) {
+
+//   .title {
+//       text-align: center;
+//       margin-top: -160px;
+//       margin-left: 25%;
+//       padding: 10px;
+//       text-shadow: 2px 2px #000;
+//       color: #FFF;
+//       & h5 {
+//           font-size: 2rem;
+//       }
+//       & h1 {
+//           font-size: 3rem;
+//       }
+//   }
+
+//   .text {
+//       margin-left: 12%;
+//   }
+// }
+
+  // @media(max-width:635px) {
+  //     .profile  {
+  //         margin-top: -650px;
+  //         padding-top: 90px;
+  //         padding-bottom: 100px;
+  //         margin-bottom: 650px;
+  //     }
+  //     .img-responsive {
+  //         margin-top: -100px;
+  //         margin-left: 50px;
+  //         width: 80%;
+  //     }
+  
+  //     .title {
+  //         margin-top: 0;
+  //     }
+  //     .title h1 {
+  //         margin-left: -80px;
+  //     }
+
+  //     .text {
+  //         margin-left: -10px;
+  //     }
+  // }
+
+  // @media(max-width:400px) {
+  //     .text {
+  //         margin-left: -50px;
+  //     }
+  // }
+
+  // @media(max-width:375px) {
+  //     .text {
+  //         margin-left: -50px;
+  //     }
+  // }
+
+  // @media(max-width:320px) {
+  //     .text {
+  //         margin-left: -50px;
+  //     }
+  // }
+
+
+  // header .intro-text .name {
+  //     font-size: 4.0em;
+  // }
+
+  // header .intro-text .skills {
+  //     font-size: 2.5em;
+  // }
+
+
+// .carousel-fade .carousel-inner .item {
+//     opacity: 0;
+//     transition-property: opacity;
+// }
+// .carousel-fade .carousel-inner .active {
+//     opacity: 1;
+// }
+// .carousel-fade .carousel-inner .active.left,
+// .carousel-fade .carousel-inner .active.right {
+//     left: 0;
+//     opacity: 0;
+//     z-index: 1;
+// }
+// .carousel-fade .carousel-inner .next.left,
+// .carousel-fade .carousel-inner .prev.right {
+//     opacity: 1;
+// }
+// .carousel-fade .carousel-control {
+//     z-index: 2;
+// }
+// @media all and (transform-3d),
+// (-webkit-transform-3d) {
+//     .carousel-fade .carousel-inner > .item.next,
+//     .carousel-fade .carousel-inner > .item.active.right {
+//         opacity: 0;
+//         -webkit-transform: translate3d(0, 0, 0);
+//         transform: translate3d(0, 0, 0);
+//     }
+//     .carousel-fade .carousel-inner > .item.prev,
+//     .carousel-fade .carousel-inner > .item.active.left {
+//         opacity: 0;
+//         -webkit-transform: translate3d(0, 0, 0);
+//         transform: translate3d(0, 0, 0);
+//     }
+//     .carousel-fade .carousel-inner > .item.next.left,
+//     .carousel-fade .carousel-inner > .item.prev.right,
+//     .carousel-fade .carousel-inner > .item.active {
+//         opacity: 1;
+//         -webkit-transform: translate3d(0, 0, 0);
+//         transform: translate3d(0, 0, 0);
+//     }
+// }
+.carousel-item:nth-child(1) {
+  background: url("../../images/homeAbout.jpeg") no-repeat center center fixed;
+  opacity: 0.9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+.carousel-item:nth-child(2) {
+  background: url(https://ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-item:nth-child(3) {
+  background: url(https://ununsplash.imgix.net/reserve/oY3ayprWQlewtG7N4OXl_DSC_5225-2.jpg?q=75&fm=jpg&s=85ab821f3fa535036a68155aab571bad) no-repeat center center fixed;    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-item:nth-child(4) {
+  background: url(https://unsplash.imgix.net/photo-1414073875831-b47709631146?q=75&fm=jpg&s=731b6d5150eea8bafa63ae8194e72ebd) no-repeat center center fixed;    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+// .carousel {
+//     z-index: -99;
+// }
+.carousel .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 40em;
+}
+
+// .profile {
+//     text-align: center;
+//     color: #fff;
+//     background-image: url("../../../images/circuito.png");
+//     background-color: rgb(69, 94, 94);
+//     background-repeat: repeat;
+//     background-position: center;
+//     background-attachment: fixed;
+//     background-size: 90%;
+//     opacity: 0.75;
+// }
+
+// @media(min-width:768px) {
+//     header .container {
+//         padding-top: 90px;
+//         padding-bottom: 100px;
+//     }
+
+//     header .intro-text .name {
+//         font-size: 4.0em;
+//     }
+
+//     header .intro-text .skills {
+//         font-size: 2.5em;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////
+
+
+// .stories {
+//   background-color: white;
+//   color: $text;
+//   font-family: "Nunito", sans-serif;
+//   &__title h1 {
+//     text-align: center;
+//     font-size: 2.5rem;
+//     font-weight: 800;
+//   }
+//   &__subtitle h4 {
+//     text-align: center;
+//     font-size: 1.6rem;
+//   }
+//   &__card h3 {
+//     font-family: "Nunito", sans-serif;
+//     font-size: 2rem;
+//     font-weight: 600;
+//   }
+//   &__card {
+//     font-size: 1.5rem;
+//     font-family: "Roboto", sans-serif;
+//     margin-top: 1.5rem;
+//     margin-bottom: 5rem;
+
+//     &__button2 {
+//       margin-top: 1.5rem;
+//     }
+
+//     @media (max-width: 768px) {
+//       &__button {
+//         margin-top: 1rem;
+//       }
+//       &__button2 {
+//         margin: 1rem 0 0 0 !important;
+//       }
+//     }
+//   }
+
+//   &__footer h2 {
+//     margin-bottom: 5rem;
+//     font-weight: 600;
+//   }
+//   .card {
+//     margin-top: 3rem;
+//   }
+//   .card-body {
+//     padding: 3rem;
+//   }
+//   @media (max-width: 768px) {
+//     .col-md-5 {
+//       max-width: 100%;
+//     }
+//     &__image {
+//       height: 20rem;
+//     }
+//     .card-text {
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       display: -webkit-box;
+//       -webkit-line-clamp: 5;
+//       -webkit-box-orient: vertical;
+//     }
+//     .card-body {
+//       padding: 2rem;
+//     }
+//   }
+// }

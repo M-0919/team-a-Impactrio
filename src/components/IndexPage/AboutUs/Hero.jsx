@@ -6,7 +6,7 @@ const Hero = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "office.jpg" }) {
+        file(relativePath: { eq: "homeAbout.jpeg" }) {
           childImageSharp {
             fluid(quality: 90) {
               ...GatsbyImageSharpFluid_withWebp_noBase64

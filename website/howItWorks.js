@@ -1,108 +1,108 @@
 module.exports = {
-  title: "See how our platform can help you network and manage your projects",
+  title: "O que você pode encontrar",
   enterpreneurTabTitle:
-    "We help you connect with investors and raise funds for your project",
+    "Saiba sobre os processos de EGBC e PMP",
   enterpreneurTabDescription:
-    "We help you raise funds so that you can focus on creating a valuable impact in the community. We’re here to assist you in building a strong relationship with our network of investors interested in opportunities that deliver strong social returns.",
+    "Como se registrar em EGBC e conseguir o título de P.Eng na província de British Columbia.",
   enterpreneurCardData: [
     {
-      title: "Create a project",
-      icon: "/how-create-black-48dp.svg",
+      title: "EGBC",
+      // icon: "/how-create-black-48dp.svg",
       discription:
-        "This includes sharing your business plan, a description of the problem you’re trying to solve, where the proceeds of your project will go, information about your team, and any additional information you want to share with potential investors.",
+        "O registro em EGBC é feito através do site do EGBC. No site https://www.egbc.bc.ca",
     },
     {
-      title: "Apply for funds",
-      icon: "/how-book_online-black-48dp.svg",
+      title: "PMP",
+      // icon: "/how-book_online-black-48dp.svg",
       discription:
-        "Once you’ve completed our platform’s unique project creation process, you can start to apply for funding by stating the type of investment you’re offering and how much you plan to raise.",
+        "Project Management Professional.",
     },
-    {
-      title: "Launch project",
-      icon: "/how-open_in_new-black-48dp.svg",
-      discription:
-        "Once your account becomes approved and upgraded, your project goes live and will be displayed to our investor community. Start promoting your project throughout your network using our platform.",
-    },
-    {
-      title: "Connect",
-      icon: "/how-connect_without_contact-black-48dp.svg",
-      discription:
-        "Our network of investors will get in touch and connect with you. You can also easily communicate with your investors through our messaging feature.",
-    },
+    // {
+    //   title: "Launch project",
+    //   icon: "/how-open_in_new-black-48dp.svg",
+    //   discription:
+    //     "Once your account becomes approved and upgraded, your project goes live and will be displayed to our investor community. Start promoting your project throughout your network using our platform.",
+    // },
+    // {
+    //   title: "Connect",
+    //   icon: "/how-connect_without_contact-black-48dp.svg",
+    //   discription:
+    //     "Our network of investors will get in touch and connect with you. You can also easily communicate with your investors through our messaging feature.",
+    // },
   ],
 
   enterpreneurSubtitle:
-    "What makes Impactraction a unique impact investing platform?",
+    "Gostaria de se associar ao BEABC?",
 
   enterpreneurRow1Data: {
-    image: "how-row1-up.jpg",
-    title: "Collaborate",
+    // image: "how-row1-up.jpg",
+    title: "P. Eng",
     discription:
-      "Easily work with your team members in building a project profile by adding their email addresses.",
+      "Passo a passo para apresentar sua proposta no EGBC.",
   },
 
   enterpreneurButtonText:
-    " What makes Impactraction a unique impact investing platform?",
+    "Deseja fazer parte do BEABC?",
 
   enterpreneurRow2Data: {
-    image: "how-row1-bottom.jpg",
-    title1: "Track",
+    // image: "how-row1-bottom.jpg",
+    title1: "PMP",
     discription1:
-      "Efficiently achieve your goals by tracking your team’s progress with our real-time update indicators.",
-    title2: "Autosave",
+      "Passo a passo para se registrar para ter a certificação PMP.",
+    title2: "PMP",
     discription2:
-      "Focus on producing great ideas without worrying whether your data is safe and saved. Continue exactly where you left off and prevent accidental data loss with our auto-save function.",
+      "Como acessar mais informações com material de estudo.",
   },
 
   inverstorTabTitle:
-    "We help you choose the right investment that supports your cause.",
+    "Orientações de como obter o registro no AIBC.",
   inverstorTabDescription:
-    "We curate local projects and investment opportunities in Canada to help you become part of an impactful project while building a diversified portfolio. We also support you in investing for a sustainable and resilient future by matching you with causes that you strongly believe in.",
+    "Saiba como obter o registro de arquiteto em British Columbia.",
 
   investorCardData: [
     {
-      title: "Select a project",
-      icon: "/how-touch_app-black-48dp.svg",
+      title: "AIBC",
+      // icon: "/how-touch_app-black-48dp.svg",
       discription:
-        "View all current investment opportunities on the platform. We review processes on all enterprises to analyze their project, traction, risk, and social impact.",
+        "Passo a passo de como conseguir o registro no site do AIBC.",
     },
     {
-      title: "Learn more",
-      icon: "/how-menu_book-black-48dp.svg",
+      title: "Saiba mais",
+      // icon: "/how-menu_book-black-48dp.svg",
       discription:
-        "Once you’ve completed our platform’s unique project creation process, you can start to apply for funding by stating the type of investment you’re offering and how much you plan to raise.",
+        "Passo a passo de como conseguir o registro no site do AIBC.",
     },
-    {
-      title: "Compare and Review",
-      icon: "/how-compare-black-48dp.svg",
-      discription:
-        "If you have other projects that you are interested at, try comparing them to one another by utilizing the compare feature on our platform. This will help make sure you are choosing the right investment that is suited for you.",
-    },
-    {
-      title: "Connect",
-      icon: "/how-connect_without_contact-black-48dp.svg",
-      discription:
-        "When you’ve selected a project that supports your cause, go into the project page and send an inquiry to the entrepreneur",
-    },
+    // {
+    //   title: "Compare and Review",
+    //   icon: "/how-compare-black-48dp.svg",
+    //   discription:
+    //     "If you have other projects that you are interested at, try comparing them to one another by utilizing the compare feature on our platform. This will help make sure you are choosing the right investment that is suited for you.",
+    // },
+    // {
+    //   title: "Connect",
+    //   icon: "/how-connect_without_contact-black-48dp.svg",
+    //   discription:
+    //     "When you’ve selected a project that supports your cause, go into the project page and send an inquiry to the entrepreneur",
+    // },
   ],
 
   investorSubtitle:
-    "What makes Impactraction a unique impact investing platform?",
+    "Gostaria de se associar?",
 
   investorRow1Data: {
-    image: "how-row2-up.jpg",
-    title: "Compare",
+    // image: "how-row2-up.jpg",
+    title: "Dicas",
     discription:
-      "Considering multiple projects? Compare them so that you can make sure you’re making the right decision.",
+      "Passo a passo completo.",
   },
 
   investorRow2Data: {
-    image: "how-row2-bottom.jpg",
-    title: "Network",
+    // image: "how-row2-bottom.jpg",
+    title: "Faça o registro no AIBC",
     discription:
-      "Connect on a more personal level and discuss your interests through sending direct messages to social entrepreneurs.",
+      "Passo a passo completo.",
   },
 
   investorButtonText:
-    "Are you ready to start investing in impact-driven projects for a sustainable world?",
+    "Deseja fazer parte do BEABC?",
 }
